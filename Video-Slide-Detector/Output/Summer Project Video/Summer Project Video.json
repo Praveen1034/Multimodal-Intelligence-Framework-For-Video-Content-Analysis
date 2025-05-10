@@ -1,0 +1,83 @@
+{
+  "pip_location": [],
+  "sequence": [
+    {
+      "type": "slide",
+      "start_time": "0.0:0.0:00",
+      "start_index": 0,
+      "offset": 0.0,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0001.png",
+      "text_ocr": "Enhancing Option Trading Predictions On 5O Using Ensemble Technique OPTION_TRADING.COM By : Praveen Choudhary | Guided By: Sahil Shah Prn : 23070243065"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:0.0:37",
+      "start_index": 19,
+      "offset": 37.449,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0020.png",
+      "text_ocr": "ABOUT THE DATASET: date low close 09-01-2015 09:15 8285.45 09-01-2015 |8292.6 09-01-20 09-01-2015 09:18 8293.9 8300.65 09-01-2015 09:19 8298.75 09-01-2015 09:20 |8300.5 8298.6 09-01-2015 09:21 8300 8301.85 09-01-2015 09:22 8295 8295 09-01-2015 09:23 8293.25 09-01-2015 09:24 8302.55 836,758 Column \u2018Time Frame Jan 2015 To jan 2024 Time min Source Kaggle (Data Source) Feature Engineering Technical Indicator Description Date-Time convert our 1-minute dataset into a 5-minute dataset Moving Average Convergence/Divergence (MACD) helps MA.C.D investors identify price trends, market sentiment, and momentum. Represents the average price of the financial instrument Average Price over a given time frame Indicates potential overbought levels by adding the Upper standard deviation to the moving average. Signals potential oversold levels by subtracting the standard deviation from the moving average. Close Price Represents the Close price of nifty- 50 per 5 min. Amomentum oscillator that Relative Strength Index: | change of price movements, oversold conditions in the After feature engineering, we have, 167,366"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:1.0:08",
+      "start_index": 35,
+      "offset": 68.985,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0036.png",
+      "text_ocr": "FlowChart: 10 Days Training Validation > Forecasting Indicator & Data Data Pre- Training Training Split Machine Forecasting Indicator Collection processing Data > 65% 2 Mode Training Testing Machine Indicator Result 35% 5-min Fig: Flowchart."
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:2.0:06",
+      "start_index": 64,
+      "offset": 126.14399999999999,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0065.png",
+      "text_ocr": "Indicator Signal\u2019s MB<Close >LB INDICATOR UB LB & MB>Close<LB UB >Close>LB & MB>Clo"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:2.0:10",
+      "start_index": 66,
+      "offset": 130.08599999999998,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0067.png",
+      "text_ocr": "Chart For Analysis Indicator/ Model Comparison LSTM + GRU (Hybrid) | | 10.794 | 116.5 | | 256.641 | 10.665 Time Fig: Chart For Analysis Indicator For Buy/ Sell/ Hold Signal. The LSTM, GRU, LSTM-GRU all Model exhibits the lowest training and testing. indicating its superior performance and making"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:2.0:25",
+      "start_index": 74,
+      "offset": 145.85399999999998,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0075.png",
+      "text_ocr": "| Actual | | ModeOF"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:2.0:55",
+      "start_index": 89,
+      "offset": 175.41899999999998,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0090.png",
+      "text_ocr": "Conclusion: Three models (GRU, LSTM, Hybrid GRU + LSTM) were proposed and tested to forecast 5-minute interval Nifty-50 index price fluctuations. The models achieved an average accuracy of 60%, correctly predicting market movements 6 out of 10 times. e The model includes a \u201cHold\u201d signal, which makes up 20% of all signals, allowing for reduced risk exposure. This helps avoid unnecessary trades during volatile market conditions, preserving capital and minimizing potential losses."
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:3.0:09",
+      "start_index": 96,
+      "offset": 189.21599999999998,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0097.png",
+      "text_ocr": "References [1] (Islam, & Hossain, 2021). Foreign exchange currency rate prediction using a GRU-LSTM hybrid network. Soft Computing Letters, 3, 100009. https://doi.org/10.1016/j.socl.2020.100009 [2] (Mehtab et al, 2021). Stock price prediction using machine learning and LSTM-Based deep learning models. In Communications in computer and information science (pp. 88-106). https://doi.org/10.1007/978-981-16-0419-5 8 [3] et al, 2023). Forecasting of NIFTY 50 Index Price by Using Backward Elimination with an LSTM Model. Journal of Risk and Financial Management, 16(10), 423. https://doi.org/10.3390/jrfm16100423 [4] (Chauhan et al, 2023). Stock price forecasting using PSO hypertuned neural nets and ensembling. Applied Soft Computing, 147, 110835. https://doi.org/10.1016/j.asoc.2023.110835 > [5] (Fathali et al, 2022). Stock Market Prediction of NIFTY 50 Index Applying Machine Learning Techniques. Applied Artificial Intelligence, 36(1). https://doi.org/10.1080/08839514.2022.2111134 [6] (Chowdhury et al, 2024). Deep Learning Models for Stock Market Forecasting: A Comprehensive Comparative Analysis. Journal of Business and Management Studies, 6(2), 95-99. https://doi.org/10.32996/jbms.2024.6.2.9 [7] (Ghosh et al, 2024). Deep Learning in Stock Market Forecasting: Comparative analysis of neural network architectures across NSE and NYSE. Journal of Computer Science and Technology Studies, 6(1), 68-75. https://doi.org/10.32996/jcsts.2024.6.1.8 [8] (Manu et al, 2020). Stock index prediction using artificial neural network and econometric model: The case of Nifty Advanced Science and Technology, 29(5), 3425-3437. of_Nifty_50 [9] Code/Data Link: https://www.kaggle.com/code/praveenchoudhary1217/stock-option-indicator/edit"
+    },
+    {
+      "type": "slide",
+      "start_time": "0.0:3.0:11",
+      "start_index": 97,
+      "offset": 191.18699999999998,
+      "source": "C:\\Users\\praveen choudhary\\Downloads\\vid2slides-main\\vid2slides-main\\Output\\Summer Project Video\\thumbnails\\hi\\thumb-0098.png",
+      "text_ocr": "k Yo Than"
+    }
+  ],
+  "crop": [
+    0,
+    0,
+    1920,
+    1080
+  ]
+}
