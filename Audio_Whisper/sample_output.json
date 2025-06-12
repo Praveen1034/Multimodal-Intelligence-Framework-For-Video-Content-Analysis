@@ -1,0 +1,417 @@
+{
+    "file_name": "y_v_sample2.mp3",
+    "duration": 486.36,
+    "language": "en",
+    "transcription": [
+        {
+            "start_time": "00:00:10",
+            "end_time": "00:00:15",
+            "text": "The following talk invites us to follow the journey of Autogen."
+        },
+        {
+            "start_time": "00:00:15",
+            "end_time": "00:00:22",
+            "text": "From a leading open source framework for multi-agent applications to a complete redesign"
+        },
+        {
+            "start_time": "00:00:22",
+            "end_time": "00:00:28",
+            "text": "that lays the foundation for the future of a GENTIC AI research and applications."
+        },
+        {
+            "start_time": "00:00:28",
+            "end_time": "00:00:35",
+            "text": "With the release of Autogen0.4, the framework's new layered architecture provides flexibility"
+        },
+        {
+            "start_time": "00:00:35",
+            "end_time": "00:00:40",
+            "text": "and scalability and includes an ecosystem of extensions and applications,"
+        },
+        {
+            "start_time": "00:00:41",
+            "end_time": "00:00:47",
+            "text": "some created by the same team, such as Magentic1, a team of generalist agents, and Studio,"
+        },
+        {
+            "start_time": "00:00:48",
+            "end_time": "00:00:55",
+            "text": "a low-code developer tool. Autogen0.4 is also a story about collaboration between"
+        },
+        {
+            "start_time": "00:00:55",
+            "end_time": "00:00:59",
+            "text": "MSR, partners with a Microsoft, and a vibrant open source community."
+        },
+        {
+            "start_time": "00:01:12",
+            "end_time": "00:01:17",
+            "text": "Hi, I am Guggen Vansol and I am a researcher at Microsoft Research AI Frontiers."
+        },
+        {
+            "start_time": "00:01:17",
+            "end_time": "00:01:21",
+            "text": "And today I'll talk about some exciting technical updates to Autogen,"
+        },
+        {
+            "start_time": "00:01:21",
+            "end_time": "00:01:24",
+            "text": "a leading open source framework for a GENTIC AI."
+        },
+        {
+            "start_time": "00:01:25",
+            "end_time": "00:01:29",
+            "text": "And although I am presenting, this is joint work with many incredible colleagues and interns"
+        },
+        {
+            "start_time": "00:01:29",
+            "end_time": "00:01:31",
+            "text": "and Microsoft over the last year."
+        },
+        {
+            "start_time": "00:01:33",
+            "end_time": "00:01:36",
+            "text": "Autogen is a leading open source framework for multi-agent applications"
+        },
+        {
+            "start_time": "00:01:36",
+            "end_time": "00:01:42",
+            "text": "that we release in fall 2023. It enables developers and researchers to create intelligent"
+        },
+        {
+            "start_time": "00:01:42",
+            "end_time": "00:01:47",
+            "text": "applications using large language models, tool use, and multi-agent collaboration balance."
+        },
+        {
+            "start_time": "00:01:48",
+            "end_time": "00:01:53",
+            "text": "With Autogen0, our goal has been to lead the innovation in a GENTIC AI research."
+        },
+        {
+            "start_time": "00:01:53",
+            "end_time": "00:01:59",
+            "text": "When we first launched Autogen in fall 2023, it quickly became the leading open source framework for"
+        },
+        {
+            "start_time": "00:01:59",
+            "end_time": "00:02:04",
+            "text": "GENTIC AI. And it continues to empower developers and researchers in many, many domains,"
+        },
+        {
+            "start_time": "00:02:05",
+            "end_time": "00:02:10",
+            "text": "including business process automation, marketing, finance, security, and others."
+        },
+        {
+            "start_time": "00:02:11",
+            "end_time": "00:02:15",
+            "text": "Since Autogen's launch, we have not just been maintaining it, we have been listening"
+        },
+        {
+            "start_time": "00:02:15",
+            "end_time": "00:02:20",
+            "text": "closely to feedback from developers and researchers. And in this rapidly evolving landscape of AI"
+        },
+        {
+            "start_time": "00:02:20",
+            "end_time": "00:02:26",
+            "text": "their expectations were high. Use us told us that they needed greater modularity and the ability"
+        },
+        {
+            "start_time": "00:02:26",
+            "end_time": "00:02:32",
+            "text": "to reuse agency, they also asked for better support for debugging and scaling their GENTIC solutions."
+        },
+        {
+            "start_time": "00:02:33",
+            "end_time": "00:02:37",
+            "text": "And finally, there were many asked to enhance the core quality and maturity of the platform."
+        },
+        {
+            "start_time": "00:02:38",
+            "end_time": "00:02:44",
+            "text": "Percewing these needs required us to question our assumptions and even possibly reimagine the platform."
+        },
+        {
+            "start_time": "00:02:44",
+            "end_time": "00:02:50",
+            "text": "So in early 2024, we use these learnings to experiment with alternate architectures."
+        },
+        {
+            "start_time": "00:02:51",
+            "end_time": "00:02:55",
+            "text": "And we ended up adopting an actor model for multi-agent orchestration."
+        },
+        {
+            "start_time": "00:02:55",
+            "end_time": "00:03:00",
+            "text": "The actor model is a well-known programming model for concurrent programming and high-use systems."
+        },
+        {
+            "start_time": "00:03:01",
+            "end_time": "00:03:06",
+            "text": "Here actors are the computational building blocks that can exchange messages and also perform work."
+        },
+        {
+            "start_time": "00:03:06",
+            "end_time": "00:03:13",
+            "text": "In fall 2024, we announced a preview of this version. And this new year,"
+        },
+        {
+            "start_time": "00:03:13",
+            "end_time": "00:03:18",
+            "text": "we're thrilled to announce a full release. In summary, Audigen.4 is a response to"
+        },
+        {
+            "start_time": "00:03:18",
+            "end_time": "00:03:22",
+            "text": "address a user's feedback in this evolving landscape of AI research."
+        },
+        {
+            "start_time": "00:03:24",
+            "end_time": "00:03:28",
+            "text": "Audigen is now not just a framework, but it's a whole ecosystem for a GENTIC AI."
+        },
+        {
+            "start_time": "00:03:28",
+            "end_time": "00:03:33",
+            "text": "It provides you with a framework that lets you build sophisticated agents and multi-agent applications,"
+        },
+        {
+            "start_time": "00:03:33",
+            "end_time": "00:03:38",
+            "text": "and it also provides you with developer tools and many well-defined applications."
+        },
+        {
+            "start_time": "00:03:39",
+            "end_time": "00:03:41",
+            "text": "Let me first tell you about the Audigen framework."
+        },
+        {
+            "start_time": "00:03:43",
+            "end_time": "00:03:49",
+            "text": "At the heart of this release is a layered architecture that is designed for flexibility and scalability."
+        },
+        {
+            "start_time": "00:03:49",
+            "end_time": "00:03:55",
+            "text": "At the base is Audigen Core. This layer implements the actor model for agents."
+        },
+        {
+            "start_time": "00:03:56",
+            "end_time": "00:04:02",
+            "text": "Building on Core is Audigen Agent Shad. This layer provides a simple and easy to use API that is"
+        },
+        {
+            "start_time": "00:04:02",
+            "end_time": "00:04:07",
+            "text": "perfect for rapid prototyping. And building on Core and Agent Shad is extensions."
+        },
+        {
+            "start_time": "00:04:07",
+            "end_time": "00:04:13",
+            "text": "This layer provides advanced clients, agents, and teams, and integrations with third-party software."
+        },
+        {
+            "start_time": "00:04:14",
+            "end_time": "00:04:18",
+            "text": "This layer architecture is nice because whether you're an advanced developer or a researcher"
+        },
+        {
+            "start_time": "00:04:18",
+            "end_time": "00:04:24",
+            "text": "prototyping new ideas, Audigen provides you with the tools you need for your project stage of development."
+        },
+        {
+            "start_time": "00:04:25",
+            "end_time": "00:04:30",
+            "text": "The Core implements an actor model for GENTIC AI. At the highest level, this implementation"
+        },
+        {
+            "start_time": "00:04:30",
+            "end_time": "00:04:36",
+            "text": "provides two key features. The first is A synchronous message exchange between agents. It does"
+        },
+        {
+            "start_time": "00:04:36",
+            "end_time": "00:04:42",
+            "text": "so by providing a runtime. And then it also provides event-reven agents that perform computation in"
+        },
+        {
+            "start_time": "00:04:42",
+            "end_time": "00:04:48",
+            "text": "response to these messages. There are several implications of this design. And one of them is"
+        },
+        {
+            "start_time": "00:04:48",
+            "end_time": "00:04:53",
+            "text": "that it decouples how the messages are delivered between the agents from how the agents handle them."
+        },
+        {
+            "start_time": "00:04:54",
+            "end_time": "00:04:59",
+            "text": "This naturally improves the modularity and scalability of a GENTIC workflows built with Audigen,"
+        },
+        {
+            "start_time": "00:04:59",
+            "end_time": "00:05:05",
+            "text": "especially for deployment. The Core's event-reven architecture provides several other benefit."
+        },
+        {
+            "start_time": "00:05:05",
+            "end_time": "00:05:11",
+            "text": "For example, it provides affordances to observe and control agent behavior, which is crucial for"
+        },
+        {
+            "start_time": "00:05:11",
+            "end_time": "00:05:16",
+            "text": "a responsible development of a GENTIC technology. It also enables running multiple agents"
+        },
+        {
+            "start_time": "00:05:16",
+            "end_time": "00:05:22",
+            "text": "on different processes and even implementing them using different languages. Finally, it enables developers"
+        },
+        {
+            "start_time": "00:05:22",
+            "end_time": "00:05:27",
+            "text": "to implement a large class of multi-edian patterns, including static and dynamic workforce."
+        },
+        {
+            "start_time": "00:05:28",
+            "end_time": "00:05:33",
+            "text": "When we release Audigen, one of the first things that developers absolutely loved about it"
+        },
+        {
+            "start_time": "00:05:33",
+            "end_time": "00:05:38",
+            "text": "was its simplicity and the many pre-built agents and teams that had provided, such as the user"
+        },
+        {
+            "start_time": "00:05:38",
+            "end_time": "00:05:43",
+            "text": "proxy agent and the system agent and the group chat between multiple agents. With the Audigen"
+        },
+        {
+            "start_time": "00:05:43",
+            "end_time": "00:05:48",
+            "text": "agent chat layer, we're maintaining these features and adding tons of more essential features,"
+        },
+        {
+            "start_time": "00:05:49",
+            "end_time": "00:05:55",
+            "text": "such as streaming support, serialization, state management and memory for agents, and finally"
+        },
+        {
+            "start_time": "00:05:55",
+            "end_time": "00:05:59",
+            "text": "full types of support for a better development experience. Please check out the link below for"
+        },
+        {
+            "start_time": "00:05:59",
+            "end_time": "00:06:06",
+            "text": "the migration guide. Finally, the extension layer provides advanced run times, tools, clients,"
+        },
+        {
+            "start_time": "00:06:06",
+            "end_time": "00:06:11",
+            "text": "and ecosystem integrations that continuously expand the framework capabilities. In addition to the"
+        },
+        {
+            "start_time": "00:06:11",
+            "end_time": "00:06:16",
+            "text": "framework, this new release also provides upgrades to essential developer tools and applications"
+        },
+        {
+            "start_time": "00:06:16",
+            "end_time": "00:06:23",
+            "text": "built using Audigen. And here, I'll briefly mention two of them. In late 2023, we also released"
+        },
+        {
+            "start_time": "00:06:23",
+            "end_time": "00:06:29",
+            "text": "Audigen Studio, which is a low core tool for authoring multi-edian applications. And we are"
+        },
+        {
+            "start_time": "00:06:29",
+            "end_time": "00:06:33",
+            "text": "excited to announce that with the version 0.4, Studio has received massive upgrades."
+        },
+        {
+            "start_time": "00:06:34",
+            "end_time": "00:06:40",
+            "text": "It now supports a Dragon Drop multi-edian builder. It supports real-time updates as agent sawstass,"
+        },
+        {
+            "start_time": "00:06:40",
+            "end_time": "00:06:45",
+            "text": "flow visualizations and execution controls so that the users remain in control and component"
+        },
+        {
+            "start_time": "00:06:45",
+            "end_time": "00:06:50",
+            "text": "gallery so that the community can discover and build on each other's work. We've always believed"
+        },
+        {
+            "start_time": "00:06:50",
+            "end_time": "00:06:54",
+            "text": "that the framework should enable state-of-the-art applications for solving complex task with agent,"
+        },
+        {
+            "start_time": "00:06:55",
+            "end_time": "00:06:59",
+            "text": "which is why we've been building applications with the framework ourselves and using that to guide"
+        },
+        {
+            "start_time": "00:06:59",
+            "end_time": "00:07:04",
+            "text": "the framework's development. Last year, we released Magentic One, a state-of-the-art multi-edian"
+        },
+        {
+            "start_time": "00:07:04",
+            "end_time": "00:07:10",
+            "text": "team for solving file and web-related tasks built using Audigen. And now it's developer API"
+        },
+        {
+            "start_time": "00:07:10",
+            "end_time": "00:07:15",
+            "text": "and general capabilities, such as the sophisticated orchestrators and specialized agents,"
+        },
+        {
+            "start_time": "00:07:15",
+            "end_time": "00:07:19",
+            "text": "such as the web server and the file server, are now available in the Audigen ecosystem."
+        },
+        {
+            "start_time": "00:07:20",
+            "end_time": "00:07:25",
+            "text": "For us, this new ecosystem is only the beginning and sets the stage for future innovation in"
+        },
+        {
+            "start_time": "00:07:25",
+            "end_time": "00:07:31",
+            "text": "agentic AR. Over the past two years, our team had made early progress in AI agents and we continue"
+        },
+        {
+            "start_time": "00:07:31",
+            "end_time": "00:07:35",
+            "text": "to deeply think about the changing landscape of current AI research and continue to invest"
+        },
+        {
+            "start_time": "00:07:35",
+            "end_time": "00:07:40",
+            "text": "in taking steps to help lead the innovation on agents. And by the way, we're also working closely"
+        },
+        {
+            "start_time": "00:07:40",
+            "end_time": "00:07:45",
+            "text": "with our colleagues as semantic kernel to provide an enterprise-ready multi-edian runtime for Audigen."
+        },
+        {
+            "start_time": "00:07:46",
+            "end_time": "00:07:51",
+            "text": "Thank you for attending Microsoft Research Forum. Please check out these links to learn more about Audigen."
+        }
+    ]
+}

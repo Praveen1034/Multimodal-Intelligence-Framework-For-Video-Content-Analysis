@@ -1,0 +1,756 @@
+{
+  "combine_json": {
+    "slides": [
+      {
+        "type": "slide",
+        "start_time": "0.0:0.0:00",
+        "start_index": 0,
+        "offset": 0.0,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0001.png",
+        "text_ocr": "Fiscal 3Q24 Results July 24, 2024 RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:00:02",
+            "end_time": "00:00:04",
+            "text": "Good evening and welcome to Raymond James Finanches,"
+          },
+          {
+            "start_time": "00:00:05",
+            "end_time": "00:00:08",
+            "text": "fiscal 2024, third quarter earnings call."
+          },
+          {
+            "start_time": "00:00:08",
+            "end_time": "00:00:13",
+            "text": "This call is being recorded and will be available for replay on the company's investor relations website."
+          },
+          {
+            "start_time": "00:00:13",
+            "end_time": "00:00:16",
+            "text": "I'm Christi Waw, Senior Vice President of Investor Relations."
+          },
+          {
+            "start_time": "00:00:17",
+            "end_time": "00:00:18",
+            "text": "Thank you for joining us."
+          },
+          {
+            "start_time": "00:00:19",
+            "end_time": "00:00:24",
+            "text": "With me on the call today, our Paul Riley, chair and chief executive officer and Paul Chucary,"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:0.0:23",
+        "start_index": 12,
+        "offset": 23.875509933774833,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0013.png",
+        "text_ocr": "Forward-looking statements Certain statements made in this presentation and the associated conference call may constitute \u201cforward-looking statements\u201d under the Private Securities Litigation Reform Act of 1995. Forward-looking statements include information concerning future strategic objectives, business prospects, anticipated savings, financial results (including expenses, eamings, liquidity, cash flow and capital expenditures), industry or market conditions (including changes in interest rates and inflation), demand for and pricing of our products (including cash sweep and deposit offerings), anticipated timing and benefits of our acquisitions or divestitures, and our level of success in integrating acquired businesses, anticipated results of litigation, regulatory developments, and general economic conditions. In addition, words such as \u201cbelieves,\u201d \u201cexpects,\u201d \u201canticipates,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cestimates,\u201d \u201cprojects,\u201d \u201cforecasts,\u201d and future or conditional verbs such as \u201cwill,\u201d \u201cmay,\u201d \u201ccould,\u201d \u201cshould,\u201d and \u201cwould,\u201d as well as any other statement that necessarily depends on future events, are intended to identify forward-looking statements. Forward-looking statements are not guarantees, and they involve risks, uncertainties and assumptions. Although we make such statements based on assumptions that we believe to be reasonable, there can be no assurance that actual results will not differ materially from those expressed in the forward- looking statements. We caution investors not to rely unduly on any forward-looking statements and urge you to carefully consider the risks described in our filings with the Securities and Exchange Commission (the from time to time, including our most recent Annual Report on Form 10-K, and subsequent Quarterly Reports on Form 10-Q and Current Reports on Form 8-K, which are available at www.raymondjames.com and the SEC\u2019s website at www.sec.gov. We expressly disclaim any obligation to update any forward-looking statement in the event it later turns out to be inaccurate, whether as a result of new information, future events, or otherwise. 2 RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:00:24",
+            "end_time": "00:00:26",
+            "text": "President and Chief Financial Officer."
+          },
+          {
+            "start_time": "00:00:26",
+            "end_time": "00:00:31",
+            "text": "The presentation being reviewed today is available on Raymond James Investor Relations website."
+          },
+          {
+            "start_time": "00:00:32",
+            "end_time": "00:00:35",
+            "text": "Following the prepared remarks, the operator will open a line for questions."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:0.0:37",
+        "start_index": 19,
+        "offset": 37.80289072847682,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0020.png",
+        "text_ocr": "Overview of Results Paul Reilly Chair & CEO, Raymond James Financial RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:00:37",
+            "end_time": "00:00:39",
+            "text": "Call your attention to slide two."
+          },
+          {
+            "start_time": "00:00:40",
+            "end_time": "00:00:44",
+            "text": "Please note that certain statements may during this call may constitute forward-looking statements."
+          },
+          {
+            "start_time": "00:00:45",
+            "end_time": "00:00:47",
+            "text": "These statements include, but are not limited to,"
+          },
+          {
+            "start_time": "00:00:48",
+            "end_time": "00:00:51",
+            "text": "information concerning future strategic objectives, business prospects,"
+          },
+          {
+            "start_time": "00:00:52",
+            "end_time": "00:00:55",
+            "text": "financial results, industry or market conditions,"
+          },
+          {
+            "start_time": "00:00:56",
+            "end_time": "00:01:01",
+            "text": "anticipated timing and benefits of our acquisitions and our level of success in integrating"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:0.0:57",
+        "start_index": 29,
+        "offset": 57.69914900662251,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0030.png",
+        "text_ocr": "Fiscal 3Q24 highlights $ in millions, except per share amounts As reported: Net revenues Net income available to common shareholders Earnings per common share \u2014 diluted Return on common equity \u2014 annualized Non-GAAP Adjusted net income available to common shareholders Adjusted earnings per common share \u2014 diluted Adjusted return on common equity \u2014 annualized Adjusted return on tangible common equity $ $ 3Q24 3,228 2.31 17.8% 508 2.39 18.4% 21.9% 11% 33% 35% 14.9% 4% 4% 4% 17.5% 27% 29% 16.1% 19.7% 3 3% 18.3% 21.8% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:01:01",
+            "end_time": "00:01:05",
+            "text": "acquired businesses, anticipated results of litigation and regulatory developments,"
+          },
+          {
+            "start_time": "00:01:06",
+            "end_time": "00:01:08",
+            "text": "and general economic conditions."
+          },
+          {
+            "start_time": "00:01:09",
+            "end_time": "00:01:15",
+            "text": "In addition, words such as believes, expects, anticipates, intends, plans, estimates,"
+          },
+          {
+            "start_time": "00:01:15",
+            "end_time": "00:01:23",
+            "text": "projects, forecasts, and future or conditional verbs, such as may, will, could, should, and would,"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:1.0:17",
+        "start_index": 39,
+        "offset": 77.5954072847682,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0040.png",
+        "text_ocr": "Fiscal 3Q24 key metrics $ in billions 3Q24 Client assets under administration 1,476.2 Private Client Group (PCG) assets under administration | RECORD $ 1,415.7 PCG assets in fee-based accounts RECORD $ Financial assets under management 229.3 Total clients\u2019 domestic cash sweep and Enhanced Savings Program balances $ 56.4 PCG financial advisors* | RECORD 8,782 Bank loans, net RECORD $ 45.1 Domestic PCG net new assets** $ 16.5 |$ 14.4 $ 9.6 Domestic PCG net new assets growth \u2014 5.2% 5.4% 3.2% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:01:23",
+            "end_time": "00:01:26",
+            "text": "as well as any other statement that necessarily depends on future events,"
+          },
+          {
+            "start_time": "00:01:27",
+            "end_time": "00:01:29",
+            "text": "are intended to identify forward-looking statements."
+          },
+          {
+            "start_time": "00:01:30",
+            "end_time": "00:01:36",
+            "text": "Please note that there can be no assurance that actual results will not differ materially"
+          },
+          {
+            "start_time": "00:01:36",
+            "end_time": "00:01:38",
+            "text": "from those expressed in these statements."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:1.0:37",
+        "start_index": 49,
+        "offset": 97.4916655629139,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0050.png",
+        "text_ocr": "Fiscal 3Q24 segment results vs. vs. $ in millions 3Q24 3Q23 2Q24 Net revenues: Private Client Group RECORD $ 2,416 11% 3% Capital Markets $ 330 20% 3% Asset Management | RECORD |$ 265 17% 5% Bank $ 418 (19)% (1)% Consolidated net revenues RECORD $ 3,228 11% 4% Pre-tax income/(loss): Private Client Group $ 441 7% (1)% Capital Markets $ (14) 59% 18% Asset Management $ 112 26% 12% Bank $ 115 74% 53% Consolidated pre-tax income $ 644 33% 6% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:01:38",
+            "end_time": "00:01:42",
+            "text": "We urge you to consider the risks described in our most recent form,"
+          },
+          {
+            "start_time": "00:01:42",
+            "end_time": "00:01:48",
+            "text": "10K and subsequent forms 10Q and forms 8K, which are available on our website."
+          },
+          {
+            "start_time": "00:01:49",
+            "end_time": "00:01:53",
+            "text": "Now, I'm happy to turn the call over to chair and CEO Paul Riley."
+          },
+          {
+            "start_time": "00:01:53",
+            "end_time": "00:01:53",
+            "text": ""
+          },
+          {
+            "start_time": "00:01:54",
+            "end_time": "00:01:55",
+            "text": "Thank you, Chrissy."
+          },
+          {
+            "start_time": "00:01:55",
+            "end_time": "00:01:55",
+            "text": "And good evening."
+          },
+          {
+            "start_time": "00:01:56",
+            "end_time": "00:01:57",
+            "text": "Thank you for joining us today."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:1.0:57",
+        "start_index": 59,
+        "offset": 117.38792384105959,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0060.png",
+        "text_ocr": "FYTD 2024 highlights (9 months) | As Net revenues RECORD 9,359 9% Net income available to common shareholders RECORD $ 1,462 12% Earnings per common share \u2014 diluted RECORD $ 6.85 15% Return on common equity \u2014 annualized 18.2% 17.9% Non-GAAP measures*: Adjusted net income available to common shareholders | RECORD 1,516 12% Adjusted earnings per common share \u2014 diluted RECORD |$ 7.10 15% Adjusted return on common equity \u2014 annualized 18.8% 18.5% Adjusted return on tangible common equity \u2014 annualized 22.5% 22.7% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:01:58",
+            "end_time": "00:02:03",
+            "text": "Last week, Paul and I attended our summer development conference for our employee advisors."
+          },
+          {
+            "start_time": "00:02:03",
+            "end_time": "00:02:08",
+            "text": "It's exciting to spend time with so many advisors who embody our client-first culture."
+          },
+          {
+            "start_time": "00:02:09",
+            "end_time": "00:02:14",
+            "text": "We hear first hand what makes Raymond James a great place for advisors who value the"
+          },
+          {
+            "start_time": "00:02:14",
+            "end_time": "00:02:19",
+            "text": "breath of our technology and product platform so they can effectively serve their clients."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:2.0:17",
+        "start_index": 69,
+        "offset": 137.28418211920527,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0070.png",
+        "text_ocr": "FYTD 2024 segment results (9 months) Net revenues: Private Client Group | RECORD 6,983 9% Capital Markets $ 989 13% Asset Management RECORD 752 16% Bank $ 1,283 (18)% Consolidated net revenues RECORD 9,359 9% Pre-tax income/(loss): Private Client Group RECORD 1,324 3% Capital Markets $ (28) 67% Asset Management RECORD 305 22% Bank $ 282 (4)% Consolidated pre-tax income | RECORD |$ 1,883 11% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:02:20",
+            "end_time": "00:02:25",
+            "text": "And importantly, a firm that provides advisors to tools they need to grow their businesses."
+          },
+          {
+            "start_time": "00:02:27",
+            "end_time": "00:02:30",
+            "text": "Paul and I appreciate the passion and dedication of the thousands of advisors"
+          },
+          {
+            "start_time": "00:02:30",
+            "end_time": "00:02:35",
+            "text": "who continue to serve their clients day in and day out."
+          },
+          {
+            "start_time": "00:02:36",
+            "end_time": "00:02:42",
+            "text": "Turning to our quarterly results, we once again deliver strong results in the quarter."
+          },
+          {
+            "start_time": "00:02:43",
+            "end_time": "00:02:48",
+            "text": "Our diverse and complementary business combined to generate record results"
+          },
+          {
+            "start_time": "00:02:48",
+            "end_time": "00:02:50",
+            "text": "for the first nine months of the fiscal year."
+          },
+          {
+            "start_time": "00:02:51",
+            "end_time": "00:02:57",
+            "text": "We continue to invest in our businesses, our people, and our technology to help drive growth"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:2.0:57",
+        "start_index": 89,
+        "offset": 177.07669867549666,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0090.png",
+        "text_ocr": "Consolidated net revenues Asset management and related administrative fees 1,611 17% 6% Brokerage revenues 532 15% 1% Account and service fees 328 24% (2)% Investment banking 183 21% 2% Interest income 1,057 1% Other (11)% 65% Total revenues 3,762 14% 3% Interest expense (534) 38% 3% Net revenues $ 3,228 11% 4% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:02:57",
+            "end_time": "00:02:59",
+            "text": "across all of our businesses."
+          },
+          {
+            "start_time": "00:03:00",
+            "end_time": "00:03:06",
+            "text": "Beginning on slide four, the firm reported record fiscal third quarter net revenues of"
+          },
+          {
+            "start_time": "00:03:06",
+            "end_time": "00:03:14",
+            "text": "$3.23 billion, an increase of 11% over the prior year quarter, primarily due to higher asset"
+          },
+          {
+            "start_time": "00:03:14",
+            "end_time": "00:03:17",
+            "text": "management and related administrative fees."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:3.0:16",
+        "start_index": 99,
+        "offset": 196.97295695364235,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0100.png",
+        "text_ocr": "Domestic cash sweep and ESP balances CLIENTS' DOMESTIC CASH SWEEP & ENHANCED SAVINGS PROGRAM (ESP)* BALANCES AS OF DOMESTIC PCG ASSETS UNDER ADMINISTRATION (AUA) 5.2% 5.1% 8 3 4.3% m 58.0 56.4 58.0 58.2 56.4 13.6 14.0 > 17.8 2 23.9 4Q23 1024 2024 3Q24 Year-over-year change: (3)% - Bank Segment** Third-Party Banks** Program Sequential change: (3)%",
+        "transcription": [
+          {
+            "start_time": "00:03:18",
+            "end_time": "00:03:27",
+            "text": "Quarterly net income available to common shareholders was $491 million or $2.31 per diluted share."
+          },
+          {
+            "start_time": "00:03:27",
+            "end_time": "00:03:34",
+            "text": "Excluding expenses related acquisitions, adjusted net income available to common shareholders"
+          },
+          {
+            "start_time": "00:03:34",
+            "end_time": "00:03:40",
+            "text": "was $588 million or $2.39 per diluted share."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:3.0:36",
+        "start_index": 109,
+        "offset": 216.86921523178805,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0110.png",
+        "text_ocr": "Net interest income & RJBDP fees (third-party banks) 708 107 601 NET INTEREST MARGIN (NIM) 3.33% 3.09% $ IN MILLIONS 698 689 672 154 152 546 1024 2024 Net interest Income Fees (Third-Party Year-over-year change: (5)% Sequential change: (2)% AVERAGE YIELD ON RJBDP (THIRD-PARTY BANKS)** 3.60% 3.59% 4Q23 1Q24 Firmwide NIM \u2014 Bank Segment NIM 4Q23 1024 2024 3024 RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:03:40",
+            "end_time": "00:03:48",
+            "text": "We generated strong returns with a quarter with annualized return on common equity of 17.8%"
+          },
+          {
+            "start_time": "00:03:48",
+            "end_time": "00:03:54",
+            "text": "and annualized adjusted return on tangible common equity of 21.9%."
+          },
+          {
+            "start_time": "00:03:54",
+            "end_time": "00:03:58",
+            "text": "A great result, particularly given our strong capital base."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:3.0:56",
+        "start_index": 119,
+        "offset": 236.76547350993374,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0120.png",
+        "text_ocr": "Consolidated expenses Compensation, commissions and benefits Non-compensation expenses: Communications and information processing Occupancy and equipment Business development investment sub-advisory fees Professional fees Bank loan provision/(benefit) for credit losses Other* Total non-compensation expenses Total non-interest expenses 2,090 166 72 48 38 (10) 105 494 2,584 13% 11% 10% 9% 20% 9% NM (34)% (13)% 7% 1% 3% 20% 9% 15% NM 50% 6% 3% TOTAL COMPENSATION RATIO** 64.7% 63.7% 63.8% 3Q23 4Q23 1024 2024 3024 Total Compensation Adjusted Total Compensation TOTAL NON-COMPENSATION EXPENSES $ IN MILLIONS 4Q23 2024 RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:04:00",
+            "end_time": "00:04:06",
+            "text": "During the quarter, we repurchase two million shares of common stock for $243 million,"
+          },
+          {
+            "start_time": "00:04:07",
+            "end_time": "00:04:13",
+            "text": "bringing our fiscal year to date total to $5.1 million for $600 million."
+          },
+          {
+            "start_time": "00:04:14",
+            "end_time": "00:04:21",
+            "text": "Moving to slide five, client assets grew to record levels during this quarter, driven by"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:4.0:16",
+        "start_index": 129,
+        "offset": 256.66173178807946,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0130.png",
+        "text_ocr": "Consolidated pre-tax margin 3Q23 1024 Pre-Tax Margin (GAAP) Adjusted Pre-Tax Margin* RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:04:21",
+            "end_time": "00:04:26",
+            "text": "rising equity markets and solid advisor retention and recruiting in PCG."
+          },
+          {
+            "start_time": "00:04:28",
+            "end_time": "00:04:34",
+            "text": "Total client assets under administration increased two percent sequentially to $1.48 trillion."
+          },
+          {
+            "start_time": "00:04:35",
+            "end_time": "00:04:42",
+            "text": "Private client assets in fee-based accounts grew to $821 billion and financial assets under"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:4.0:36",
+        "start_index": 139,
+        "offset": 276.55799006622516,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0140.png",
+        "text_ocr": "Other financial information $ in millions, except per share amounts Total assets RJF corporate cash* Total common equity attributable to RUF Book value per share Tangible book value per share** Weighted-average common and common equivalent shares outstanding \u2014 diluted Tier 1 leverage ratio Tier 1 capital Common equity tier 1 ratio Total capital Effective tax rate 3Q24 80,628 2,109 11,118 54.08 45.57 212.3 12.7% 22.2% 22.0% 23.6% 23.6% vs. 3Q23 4% 23% 13% 14% 18% 11.4% 20.6% 20.4% 22.0% 24.1% vs. 2024 (1)% 4% 2% 3% 3% 1 1 12.3% 21.9% 21.8% 23.3% 21.8% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:04:42",
+            "end_time": "00:04:51",
+            "text": "management to $229 billion. Domestic net new assets during the quarter were $16.5 billion."
+          },
+          {
+            "start_time": "00:04:51",
+            "end_time": "00:04:58",
+            "text": "Representing a five point two annualized growth rate on the beginning of the period domestic PCG assets."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:4.0:56",
+        "start_index": 149,
+        "offset": 296.45424834437085,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0150.png",
+        "text_ocr": "Capital management $1.4B of dividends paid and share repurchases over the past 5 quarters remains under current common stock repurchase authorization*** DIVIDENDS PAID AND SHARE REPURCHASES $ IN MILLIONS Share 390 90 300 88 3Q23 4Q23 Number of Shares Repurchased* 3,314 N/A (thousands) Average Share Price of Shares $90.51 N/A 245 95 150 1Q24 1,408 $106.51 337 302 94 95 207 243 2024 3Q24 1,695 1,994 $121.99 $121.98 RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:04:59",
+            "end_time": "00:05:07",
+            "text": "Our robust technology capabilities, client first values, and long established multi-e affiliation"
+          },
+          {
+            "start_time": "00:05:07",
+            "end_time": "00:05:13",
+            "text": "options continue to retain and attract high-quality advisors to the platform."
+          },
+          {
+            "start_time": "00:05:14",
+            "end_time": "00:05:19",
+            "text": "This quarter, we recruited to our domestic independent contractor and employee channels,"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:5.0:16",
+        "start_index": 159,
+        "offset": 316.35050662251655,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0160.png",
+        "text_ocr": "Bank segment key credit trends milions 3024 Bank loan provision/(benefit) for credit losses $ (10) NM NM Net charge-offs $ 6 (60)% (79)% Nonperforming assets as a % of total assets 0.26% 0.21% 0.31% Bank loan allowance for credit losses as a % of loans held for investment 1.00% 1.04% 1.06% Bank loan allowance for credit losses on corporate loans as a % of corporate loans held for investment* 2.00% 1.90% 2.05% Criticized loans as a % of loans held for investment 1.15% 0.94% 1.21% RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:05:20",
+            "end_time": "00:05:25",
+            "text": "financial advisors with approximately $92 million of trailing month production,"
+          },
+          {
+            "start_time": "00:05:26",
+            "end_time": "00:05:31",
+            "text": "and $13.4 billion of client assets at their previous firms."
+          },
+          {
+            "start_time": "00:05:32",
+            "end_time": "00:05:41",
+            "text": "Including RCS, we recruited client assets of $14.9 billion, making this our best quarter since 2021,"
+          },
+          {
+            "start_time": "00:05:41",
+            "end_time": "00:05:48",
+            "text": "in terms of recruited assets. Fiscal year to date, trailing 12-month production of recruited"
+          },
+          {
+            "start_time": "00:05:48",
+            "end_time": "00:05:57",
+            "text": "advisors is up 33 percent, related client assets are up 52 percent over the prior nine-month period."
+          },
+          {
+            "start_time": "00:05:58",
+            "end_time": "00:06:05",
+            "text": "These results do not include our RIA and custody services business, RCS, which also continues to"
+          },
+          {
+            "start_time": "00:06:05",
+            "end_time": "00:06:13",
+            "text": "have recruiting success and finished the quarter with $167 billion of client assets under administration."
+          },
+          {
+            "start_time": "00:06:14",
+            "end_time": "00:06:20",
+            "text": "We continue to experience growth in RCS from external joins as well as from internal transfers."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:6.0:16",
+        "start_index": 189,
+        "offset": 376.0392814569536,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0190.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) We utilize certain non-GAAP financial measures as additional measures to aid in, and enhance, the understanding of our financial results and related measures. These non- GAAP financial measures have been separately identified in this document. We believe certain of these non-GAAP financial measures provide useful information to management and investors by excluding certain material items that may not be indicative of our core operating results. We utilize these non-GAAP financial measures in assessing the financial performance of the business, as they facilitate a comparison of current- and prior-period results. We believe that return on tangible common equity and tangible book value per share are meaningful to investors as they facilitate comparisons of our results to the results of other companies. In the following tables, the tax effect of non-GAAP adjustments reflects the statutory rate associated with each non-GAAP item. These non-GAAP financial measures should be considered in addition to, and not as a substitute for, measures of financial performance prepared in accordance with GAAP. In addition, our non-GAAP financial measures may not be comparable to similarly titled non-GAAP financial measures of other companies. The following tables provide a reconciliation of non-GAAP financial measures to the most directly comparable GAAP measures for those periods which include non-GAAP adjustments. Note: Please refer to the footnotes on 29 for additional information. continued on next RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:06:22",
+            "end_time": "00:06:30",
+            "text": "This quarter, we reported record financial advisors of $8,782, and that does not include"
+          },
+          {
+            "start_time": "00:06:30",
+            "end_time": "00:06:37",
+            "text": "internal transfers to RCS of nearly 50 advisors, primarily all from one firm."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:6.0:35",
+        "start_index": 199,
+        "offset": 395.93553973509927,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0200.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Three months ended Nine months ended 30, September 30, March June June 30, 2023 2023 2024 2024 2023 2024 Net income available to common 1301 $ Expenses related to commissions and retention 17 53 Other compensation 10 = = = = 10 Total \u201cCompensation, commissions and expense 7 \" \" 63 33 and processing 2 1 1 fees 1 3 1 1 1 1 3 Other of 12 3 3 All acquisition-related = 2 2 Total expense 12 13 Total expenses to acquisitions 40 23 \u2014 = = = = (32) of non-GAAP 40 23 Tax effect of (6) (16) Total non-GAAP adjustments, net of tax 25 7 20 7 4g Pretax income 630 $ Pre-tax non-GAAP adjusiments (as detailed above) 23 26 Adjusted pre-tax income 619 Note: refer to the footnotes on slide 29 for additional information",
+        "transcription": [
+          {
+            "start_time": "00:06:38",
+            "end_time": "00:06:45",
+            "text": "While transfers to RCS lower the firm's advisor count, the client assets typically remain with the firm."
+          },
+          {
+            "start_time": "00:06:46",
+            "end_time": "00:06:54",
+            "text": "Looking at fiscal year to date results, domestic net new assets were $47.7 billion,"
+          },
+          {
+            "start_time": "00:06:54",
+            "end_time": "00:07:00",
+            "text": "representing a 5.8 percent annualized growth rate on the beginning of the period domestic"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:6.0:55",
+        "start_index": 209,
+        "offset": 415.83179801324496,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0210.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Three months ended June 30, September 30, December 31, March 31, June 30, 2023 2023 2023 2024 Pre-tax 167% 192% 20.0% Expenses related to acquisitions: Compensation, commissions and retention Other compensation Total \u201cCompensation, commissions and expense 10% Communication and information processing Professional fees of assets other expenses Total \u201cOther\u201d expense 04% 04% Total expenses to acquisitions 14% \u2014 insurance received Total non-GAAP 14% Adjusted pre-tax 203% 204% 20.7% Note: Please refer to the footnotes on slide 29 for additional information continued on next slide RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:07:00",
+            "end_time": "00:07:05",
+            "text": "private client group assets, a strong result compared to peer group."
+          },
+          {
+            "start_time": "00:07:07",
+            "end_time": "00:07:11",
+            "text": "Total clients domestic sweep and enhanced savings program balances"
+          },
+          {
+            "start_time": "00:07:11",
+            "end_time": "00:07:18",
+            "text": "ended the quarter at $56.4 billion down 3 percent from March of 2024."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:7.0:15",
+        "start_index": 219,
+        "offset": 435.72805629139066,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0220.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Compensation, commissions and benefits expense Less: Total acquisition expenses Adjusted compensation, commissions and benefits expense Total compensation Less the impact of adjustments on compensation retention Total \u201cCompensation, commissions and benefits\u201d expenses related to acquisitions Adjusted total compensation on slide 29 for additional Three months ended 30, September December March 31, June 2023 2023 2023 2024 2024 1,892 2,043 2.090 1 620% 638% o7% 06% 10% 06% 03% 627% 614% 634% continued on next slide RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:07:19",
+            "end_time": "00:07:25",
+            "text": "We are pleased to see cash balances renamed relatively flat in the quarter following fee"
+          },
+          {
+            "start_time": "00:07:25",
+            "end_time": "00:07:35",
+            "text": "billings paid in April. Bank loans grew 2 percent over the preceding quarter to a record 45.1 billion dollars."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:7.0:35",
+        "start_index": 229,
+        "offset": 455.62431456953635,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0230.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Three months ended Nine months ended 30, March 31 June June 30, Earnings per common 2023 2024 2024 2024 Basic 7.02 Expenses to commissions retention 0.09 0.05 0.16 Other acquisition-related compensation 0.05 0.05 = Total and expense 0.06 0.05 030 Communication and information Professional fees 0.01 Amortization of identifiable intangible 0.05 0.06 0.16 All other expenses = 0.01 = = Total expense 0.05 0.06 0.16 Total expenses related to 0.19 0.46 Other \u2014 insurance (0.15) non-GAAP net of tax 0.10 023 0.26 Adjusted basic Note: refer to the footnotes on slide 29 for additional RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:07:35",
+            "end_time": "00:07:41",
+            "text": "Primarily due to higher securities based loans as demand for CNI loans remains muted."
+          },
+          {
+            "start_time": "00:07:42",
+            "end_time": "00:07:51",
+            "text": "Moving on to slide six, private client group generated record quarterly net revenues of $2.42 billion"
+          },
+          {
+            "start_time": "00:07:51",
+            "end_time": "00:08:01",
+            "text": "and pre-tax income of $441 million. Year over year results were bolstered by higher PCG assets"
+          },
+          {
+            "start_time": "00:08:01",
+            "end_time": "00:08:07",
+            "text": "under administration due to strong equity markets and net new assets brought into the firm."
+          },
+          {
+            "start_time": "00:08:07",
+            "end_time": "00:08:15",
+            "text": "The capital market segment generated quarterly net revenues of $330 million and a pre-tax loss of"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:8.0:15",
+        "start_index": 249,
+        "offset": 495.41683112582774,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0250.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Book per share 30, March 31, 30, except per share amounts 2023 2024 2024 Total common equity attributable to Raymond James Financial, inc, non-GAAP and identifiable intangible assets, net tax related goodwill and assets, net (129) (134) (136) Tangible common equity attributable to Raymond James Financial, $ Common shares outstanding 208.5 207.3 205.6 Book value per $ 54.08 Tangible book value per Note: refer to the footnotes on slide 29 for additional informatior 26 on RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:08:15",
+            "end_time": "00:08:21",
+            "text": "$14 million. Net revenues grew 20 percent compared to a year ago quarter,"
+          },
+          {
+            "start_time": "00:08:21",
+            "end_time": "00:08:28",
+            "text": "primarily due to higher debt and equity underwriting revenues. Sequentially revenues increase"
+          },
+          {
+            "start_time": "00:08:28",
+            "end_time": "00:08:33",
+            "text": "3 percent primarily driven by the higher affordable housing investment revenues."
+          },
+          {
+            "start_time": "00:08:34",
+            "end_time": "00:08:42",
+            "text": "Pre-tax loss in capital markets segment of $14 million reflects weak MNA results in the"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:8.0:35",
+        "start_index": 259,
+        "offset": 515.3130894039734,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0260.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Return on common equity Three months ended Nine months ended 30, March 31, June 30, June 30, June 30, 2024 2024 2023 2024 Average common | of non-GAAP on equity: Expenses related to acquisitions: commissions and 6 Other acquisition-related compensation 4 = = Total \u201cCompensation, commissions and expense 6 7 Communication and information Professional fees 1 1 2 Amortization of intangible 6 6 7 16 acquisition-related expenses 1 1 Total expense 6 17 7 Total expenses related to acquisitions 2 \u2014 insurance received - - of non-GAAP Total non-GAAP adjustments, net of tax 10 17 Adjusted average common | \u00a7 10,744 Note: refer to the footnotes on slide 29 for additional information a on RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:08:42",
+            "end_time": "00:08:47",
+            "text": "impact of amortization, a deferred compensation granted in preceding quarters, which totaled"
+          },
+          {
+            "start_time": "00:08:47",
+            "end_time": "00:08:54",
+            "text": "approximately $20 million this quarter. While the timing of closed-ings remain difficult to"
+          },
+          {
+            "start_time": "00:08:54",
+            "end_time": "00:09:00",
+            "text": "predict, we are still optimistic about our healthy pipeline and new business activity in MNA."
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:8.0:55",
+        "start_index": 269,
+        "offset": 535.2093476821192,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0270.png",
+        "text_ocr": "Reconciliation of non-GAAP financial measures to GAAP financial measures (unaudited) Return on tangible common equity Average common equity Average and assets. net Average tax related to and assets, net Average tangible common equity nan-GAAP on average tangible Expenses related to and retention Other compensation Total \u201cCompensation, commissions and expense Communication and information processing Professional fees Amortization of assets All expenses Total expense Total expenses to acquisitions Other \u2014 received Tax of non-GAAP adjustments Total net of tax Adjusted average tangible common Retum on common retum on Retum on common on tangible Note: refer to the footnotes on slide 29 for additional information 28 Three months ended June 30, March June 2023 2024 2024 9.873 10,808 11,012 1,990 1,901 1,689 (128) (133) 2,040 Nine months ended June 30, June 2023 2024 9,705 10,717 1,932 1,698 (128) 2 2",
+        "transcription": [
+          {
+            "start_time": "00:09:01",
+            "end_time": "00:09:06",
+            "text": "We continue to expect investment banking revenues to improve along with industry-wide"
+          },
+          {
+            "start_time": "00:09:06",
+            "end_time": "00:09:16",
+            "text": "gradual recovery. The asset management segment generated pre-tax income of $112 million on record"
+          }
+        ]
+      },
+      {
+        "type": "slide",
+        "start_time": "0.0:9.0:15",
+        "start_index": 279,
+        "offset": 555.1056059602648,
+        "source": "Output\\Raymond James\\thumbnails\\hi\\thumb-0280.png",
+        "text_ocr": "Footnotes (2) (5) (8) (9) Includes acquisition-related compensation expenses primarily arising from equity and cash-based retention awards issued conjunction with acquisitions in prior years. Such retention awards are generally upon the continuation of service of certain associates who the firm as part of such acquisitions and are expensed over the requisite service period. Amortization of identifiable intangible assets, which was included in amortization of identifiable intangible assets arising from our acquisitions. The nine months ended June 30, 2023 included the impact of a $32 million insurance received during the period related to a previously legal matter. This item has been as offset to Other expenses within our Other segment. In the computation of our non-GAAP financial measures, we have reversed the favorable impact of this item on adjusted pre-tax income and adjusted net income available to common shareholders. the case of adjusted pre-tax margin, computed by dividing adjusted pre-tax income by net revenues for respective period. by dividing adjusted compensation, commissions and benefits expense by net revenues for each respective period. Earnings per common share is computed by dividing net income available to common (less allocation of and dividends to participating securities) by common shares (basic or diluted as applicable) for each respective period or, in the case of adjusted earnings per common share, computed by dividing adjusted net income to common (less allocation of earnings and dividends to participating securities) by weighted-average common shares outstanding (basic or diluted as applicable) for each respective period. The allocations of eamings and dividends to participating securities were $1 million for each of the three months ended June 30, 2024, March 31, 2024, and June 30, 2023, and $3 million and $4 for the nine months ended June 30, 2024 and June 30, 2023, respectively. Book value per share is computed by dividing total common equity attributable to Raymond James Financial, Inc. by the number of common shares outstanding at the end of each respective period or, in the case of tangible book value per share, computed by dividing tangible common equity by the number of common shares outstanding at the end of each respective period. Average common equity for the quarter-to-date period is computed by adding the total common equity to Raymond James Financial, inc. as of the date indicated to the prior quarter-end and dividing by two, or in the case of average tangible common equity, computed by adding tangible common equity as of the date indicated to the quarter-end total, and dividing by two. For the year-to-date period, average common equity is computed by adding the total common equity attributable to Raymond James Financial, inc. as of each quarter-end date during the indicated period to the beginning of year and dividing by four, or in the case of average tangible common equity, computed by adding tangible common equity as of each quarter-end date during the indicated period to the beginning of year total, dividing by four. Adjusted average common equity is computed by adjusting for the impact on average common equity of the non-GAAP adjustments, as applicable for each respective period. Adjusted applicable for each respective period. Return on common equity is computed by dividing annualized net income available to common shareholders by average common equity for each respective period or, the case of return on tangible common equity, computed by dividing annualized net income available to common shareholders by average tangible common equity for each respective period. Adjusted on common is computed by dividing annualized adjusted net income available to common by adjusted average common equity for each respective period, or in the case of adjusted return on tangible common equity, by dividing annualized adjusted net income available to common by adjusted average tangible common equity for each respective period. Tangible common equity is defined as total equity attributable to Raymond James Financial, inc. less and intangible assets, net of related deferred taxes. RAYMOND JAMES",
+        "transcription": [
+          {
+            "start_time": "00:09:16",
+            "end_time": "00:09:24",
+            "text": "net revenues of $265 million. Results were largely attributable to higher financial assets under"
+          },
+          {
+            "start_time": "00:09:24",
+            "end_time": "00:09:31",
+            "text": "management compared to the prior year quarter due to market appreciation and net inflows into"
+          },
+          {
+            "start_time": "00:09:31",
+            "end_time": "00:09:40",
+            "text": "PCG fee-based accounts. The bank segment generated net revenues of $418 million and pre-tax income"
+          },
+          {
+            "start_time": "00:09:40",
+            "end_time": "00:09:49",
+            "text": "of $111,15 million. The bank segment net interest margin of $2.64 per cent declined just two basis"
+          },
+          {
+            "start_time": "00:09:49",
+            "end_time": "00:09:55",
+            "text": "points compared to the preceding quarter. Looking at the fiscal year-to-date results on slide"
+          },
+          {
+            "start_time": "00:09:55",
+            "end_time": "00:10:00",
+            "text": "7, we generated record net revenues of $9.36 billion."
+          }
+        ]
+      }
+    ]
+  }
+}
