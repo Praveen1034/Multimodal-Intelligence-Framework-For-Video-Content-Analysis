@@ -143,28 +143,33 @@ def extract_frames(video, hi_dir, hi_size, times):
         wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
-    
     nframes = []
     for time in times:
         nframes.append(int(framerate * (2 * (time + 1))))
 
     vr = VideoReader(video, ctx=cpu(0))
     nframes = [min(vr._num_frame - 1, x) for x in nframes]
-    frames = vr.get_batch(nframes).asnumpy()
-    
+
+    batch_size = 8  # Process frames in small batches to avoid memory errors
     with tqdm(total=len(nframes), desc="Extracting high-resolution frames") as pbar:
-        for i in range(len(nframes)):
-            frame = frames[i, :, :, :]
-            # Now clear why r and b are mixed up.
-            frame = frame[:, :, np.array([2, 1, 0])]
-            assert frame.ndim == 3
-            assert frame.shape[-1] == 3
-            
-            cv2.imwrite(
-                os.path.join(hi_dir, f'thumb-{times[i]+1:04}.png'),
-                cv2.resize(frame, (wo, ho))
-            )
-            pbar.update(1)
+        for i in range(0, len(nframes), batch_size):
+            batch_indices = nframes[i:i+batch_size]
+            try:
+                frames = vr.get_batch(batch_indices).asnumpy()
+            except Exception as e:
+                print(f"Error loading frames {batch_indices}: {e}")
+                continue
+            for j, idx in enumerate(batch_indices):
+                frame = frames[j, :, :, :]
+                # Now clear why r and b are mixed up.
+                frame = frame[:, :, np.array([2, 1, 0])]
+                assert frame.ndim == 3
+                assert frame.shape[-1] == 3
+                cv2.imwrite(
+                    os.path.join(hi_dir, f'thumb-{times[i+j]+1:04}.png'),
+                    cv2.resize(frame, (wo, ho))
+                )
+                pbar.update(1)
 
 
 def get_delta_images(the_dir, has_face):
