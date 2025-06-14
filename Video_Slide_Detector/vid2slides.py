@@ -95,18 +95,21 @@ def extract_thumbnails(video,
         lo_dir: the output directory for low-res thumbnails. Thumbnails are put 
             in this directory named thumb-%02d.jpg
         lo_size: the max size of the low-res thumbnails. We will resize the thumbnails
-            to fit within this bounding box.
+            to fit within this bounding box, preserving aspect ratio.
         thumb_interval (optional): the time in seconds between thumbnails
     """
     info = get_video_info(video)
     w, h = info['coded_width'], info['coded_height']
 
+    # Dynamically calculate output size to preserve aspect ratio
     aspect_ratio = w / h
-    if aspect_ratio > lo_size[0] / lo_size[1]:
-        # Wide format
-        wo, ho = lo_size[0], int(lo_size[0] // aspect_ratio)
+    max_w, max_h = lo_size
+    if w / max_w > h / max_h:
+        wo = max_w
+        ho = int(max_w / aspect_ratio)
     else:
-        wo, ho = int(lo_size[1] * aspect_ratio), lo_size[1]
+        ho = max_h
+        wo = int(max_h * aspect_ratio)
 
     total_frames = int(float(info['duration']) / thumb_interval)
 
@@ -115,8 +118,8 @@ def extract_thumbnails(video,
             'ffmpeg',
             '-i',
             video,
-            '-s',
-            f'{wo}x{ho}',
+            '-vf',
+            f'scale={wo}:{ho}:force_original_aspect_ratio=decrease',
             '-r',
             f'{1/thumb_interval}',
             '-f',
@@ -129,12 +132,15 @@ def extract_frames(video, hi_dir, hi_size, times):
     info = get_video_info(video)
     w, h = info['coded_width'], info['coded_height']
 
+    # Dynamically calculate output size to preserve aspect ratio
     aspect_ratio = w / h
-    if aspect_ratio > hi_size[0] / hi_size[1]:
-        # Wide format
-        wo, ho = hi_size[0], int(hi_size[0] // aspect_ratio)
+    max_w, max_h = hi_size
+    if w / max_w > h / max_h:
+        wo = max_w
+        ho = int(max_w / aspect_ratio)
     else:
-        wo, ho = int(hi_size[1] * aspect_ratio), hi_size[1]
+        ho = max_h
+        wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
     
@@ -164,6 +170,8 @@ def extract_frames(video, hi_dir, hi_size, times):
 def get_delta_images(the_dir, has_face):
     matching_images = glob.glob(os.path.join(the_dir, 'thumb-*.jpg'))
     nimages = len(matching_images)
+    if nimages == 0:
+        raise ValueError(f"No thumbnails found in directory: {the_dir}. Check if thumbnail extraction succeeded.")
     sizes = []
 
     for i, filename in enumerate(matching_images):
@@ -180,6 +188,8 @@ def get_delta_images(the_dir, has_face):
             sizes[i] = 0
 
     candidates = sorted(heuristic_frames(sizes))
+    if not candidates:
+        raise ValueError("No candidate frames found for slide detection. This may be due to all frames being filtered out or too few valid thumbnails.")
 
     candidate_images = np.stack([images[i, :, :] for i in candidates])
     assert candidate_images.shape[0] == len(candidates)
@@ -233,37 +243,39 @@ def max_likelihood_sequence(nll, jump_probability=0.2):
 def extract_crop(info):
     """
     Find a reasonable crop given the information available.
+    Downscale images and sample if too many to avoid memory errors.
     """
+    import math
     ims = []
-    for el in info['sequence']:
-        if el['type'] == 'slide':
-            im = cv2.imread(el['source'], cv2.IMREAD_GRAYSCALE)  # Read as grayscale to reduce memory usage
+    slide_elements = [el for el in info['sequence'] if el['type'] == 'slide']
+    max_samples = 50
+    # Sample up to max_samples slides evenly spaced
+    if len(slide_elements) > max_samples:
+        indices = [math.floor(i * len(slide_elements) / max_samples) for i in range(max_samples)]
+        slide_elements = [slide_elements[i] for i in indices]
+    for el in slide_elements:
+        im = cv2.imread(el['source'], cv2.IMREAD_GRAYSCALE)
+        if im is not None:
+            # Downscale to 1/4 size for memory efficiency
+            im = cv2.resize(im, (im.shape[1] // 4, im.shape[0] // 4), interpolation=cv2.INTER_AREA)
             ims.append(im)
-
     if not ims:
-        # Handle the case where no slides are found
         print("No slides found in the sequence. Returning default crop.")
-        return (0, 0, 0, 0)  # Default crop values
-
-    # Convert images to a smaller data type to save memory
-    ims = [im.astype(np.float32) / 255.0 for im in ims]  # Normalize to range [0, 1]
-
+        return (0, 0, 0, 0)
+    ims = [im.astype(np.float32) / 255.0 for im in ims]
     A = np.stack(ims, axis=0)
     broad_crop = (A.mean(axis=0) > 0.2).astype(np.uint8)
-
-    contours, _ = cv2.findContours(broad_crop, cv2.RETR_TREE, 
-        cv2.CHAIN_APPROX_SIMPLE) 
-
-    # Find the largest contour
+    contours, _ = cv2.findContours(broad_crop, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     biggest_ar = 0
     x = y = w = h = 0
-    for _, contour in enumerate(contours):
+    for contour in contours:
         ar = cv2.contourArea(contour)
         if ar > biggest_ar:
             biggest_ar = ar
             (x, y, w, h) = cv2.boundingRect(contour)
-
-    return (x, y, w, h)
+    # Scale crop back to original size
+    scale = 4
+    return (x * scale, y * scale, w * scale, h * scale)
 
 
 def deduplicate_slides(slides, similarity_threshold=0.9):
