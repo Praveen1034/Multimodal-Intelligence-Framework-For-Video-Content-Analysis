@@ -113,9 +113,14 @@ def extract_thumbnails(video,
 
     total_frames = int(float(info['duration']) / thumb_interval)
 
+    # Ensure output directory exists
+    if not os.path.exists(lo_dir):
+        os.makedirs(lo_dir)
+
     with tqdm(total=total_frames, desc="Extracting thumbnails") as pbar:
-        subprocess.run([
+        result = subprocess.run([
             'ffmpeg',
+            '-y',
             '-i',
             video,
             '-vf',
@@ -124,8 +129,19 @@ def extract_thumbnails(video,
             f'{1/thumb_interval}',
             '-f',
             'image2',
-            f'{lo_dir}/thumb-%04d.jpg'], shell=False)
+            os.path.join(lo_dir, 'thumb-%04d.jpg')
+        ], shell=False, capture_output=True, text=True)
         pbar.update(total_frames)
+        if result.returncode != 0:
+            print(f"FFmpeg failed with error code {result.returncode}.")
+            print("FFmpeg stderr:")
+            print(result.stderr)
+        else:
+            print("FFmpeg completed successfully.")
+        # Debug: List files in lo_dir
+        import glob
+        print(f"Checking for thumbnails in: {lo_dir}")
+        print('Found files:', glob.glob(os.path.join(lo_dir, 'thumb-*.jpg')))
 
 
 def extract_frames(video, hi_dir, hi_size, times):
@@ -143,25 +159,18 @@ def extract_frames(video, hi_dir, hi_size, times):
         wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
-    nframes = []
-    for time in times:
-        nframes.append(int(framerate * (2 * (time + 1))))
+    nframes = [int(framerate * (2 * (time + 1))) for time in times]
 
     vr = VideoReader(video, ctx=cpu(0))
     nframes = [min(vr._num_frame - 1, x) for x in nframes]
 
-    batch_size = 8  # Process frames in small batches to avoid memory errors
-    with tqdm(total=len(nframes), desc="Extracting high-resolution frames") as pbar:
-        for i in range(0, len(nframes), batch_size):
-            batch_indices = nframes[i:i+batch_size]
-            try:
-                frames = vr.get_batch(batch_indices).asnumpy()
-            except Exception as e:
-                print(f"Error loading frames {batch_indices}: {e}")
-                continue
-            for j, idx in enumerate(batch_indices):
+    chunk_size = 10  # Number of frames to process at a time
+    with tqdm(total=len(nframes), desc="Extracting high-resolution frames (chunked)") as pbar:
+        for i in range(0, len(nframes), chunk_size):
+            chunk_indices = nframes[i:i+chunk_size]
+            frames = vr.get_batch(chunk_indices).asnumpy()
+            for j, idx in enumerate(chunk_indices):
                 frame = frames[j, :, :, :]
-                # Now clear why r and b are mixed up.
                 frame = frame[:, :, np.array([2, 1, 0])]
                 assert frame.ndim == 3
                 assert frame.shape[-1] == 3
@@ -295,32 +304,27 @@ def deduplicate_slides(slides, similarity_threshold=0.9):
         A list of unique slides.
     """
     from skimage.metrics import structural_similarity as ssim
-    
+    from tqdm import tqdm as tqdm_bar
     unique_slides = []
     seen_texts = set()
 
-    for i, slide in enumerate(slides):
+    for i, slide in tqdm_bar(list(enumerate(slides)), desc="Deduplicating slides", total=len(slides)):
         is_duplicate = False
-
         # Check for duplicate OCR text
         if slide['text_ocr'] in seen_texts:
             continue
-
         for unique_slide in unique_slides:
             # Compare visual similarity
             img1 = cv2.imread(slide['source'], cv2.IMREAD_GRAYSCALE)
             img2 = cv2.imread(unique_slide['source'], cv2.IMREAD_GRAYSCALE)
-
             if img1 is not None and img2 is not None:
                 score, _ = ssim(img1, img2, full=True)
                 if score >= similarity_threshold:
                     is_duplicate = True
                     break
-
         if not is_duplicate:
             unique_slides.append(slide)
             seen_texts.add(slide['text_ocr'])
-
     return unique_slides
 
 
@@ -425,6 +429,9 @@ def extract_keyframes_from_video(target, output_json, thumb_dir):
     for el in tqdm(info['sequence'], desc="Processing OCR for slides"):
         if el['type'] == 'slide':
             im = cv2.imread(el['source'])
+            if im is None:
+                print(f"Warning: Could not read image {el['source']}, skipping OCR for this slide.")
+                continue
             d = pytesseract.image_to_data(im, output_type=Output.DICT)
             text_ocr = ' '.join([d['text'][i] for i in range(len(d['text'])) if int(d['conf'][i]) > 80 and d['text'][i].strip()])
 
