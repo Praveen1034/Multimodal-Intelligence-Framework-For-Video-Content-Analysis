@@ -113,9 +113,14 @@ def extract_thumbnails(video,
 
     total_frames = int(float(info['duration']) / thumb_interval)
 
+    # Ensure output directory exists
+    if not os.path.exists(lo_dir):
+        os.makedirs(lo_dir)
+
     with tqdm(total=total_frames, desc="Extracting thumbnails") as pbar:
-        subprocess.run([
+        result = subprocess.run([
             'ffmpeg',
+            '-y',
             '-i',
             video,
             '-vf',
@@ -124,8 +129,19 @@ def extract_thumbnails(video,
             f'{1/thumb_interval}',
             '-f',
             'image2',
-            f'{lo_dir}/thumb-%04d.jpg'], shell=False)
+            os.path.join(lo_dir, 'thumb-%04d.jpg')
+        ], shell=False, capture_output=True, text=True)
         pbar.update(total_frames)
+        if result.returncode != 0:
+            print(f"FFmpeg failed with error code {result.returncode}.")
+            print("FFmpeg stderr:")
+            print(result.stderr)
+        else:
+            print("FFmpeg completed successfully.")
+        # Debug: List files in lo_dir
+        import glob
+        print(f"Checking for thumbnails in: {lo_dir}")
+        print('Found files:', glob.glob(os.path.join(lo_dir, 'thumb-*.jpg')))
 
 
 def extract_frames(video, hi_dir, hi_size, times):
@@ -143,28 +159,52 @@ def extract_frames(video, hi_dir, hi_size, times):
         wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
-    
-    nframes = []
-    for time in times:
-        nframes.append(int(framerate * (2 * (time + 1))))
+    nframes = [int(framerate * (2 * (time + 1))) for time in times]
 
     vr = VideoReader(video, ctx=cpu(0))
-    nframes = [min(vr._num_frame - 1, x) for x in nframes]
-    frames = vr.get_batch(nframes).asnumpy()
-    
-    with tqdm(total=len(nframes), desc="Extracting high-resolution frames") as pbar:
-        for i in range(len(nframes)):
-            frame = frames[i, :, :, :]
-            # Now clear why r and b are mixed up.
-            frame = frame[:, :, np.array([2, 1, 0])]
-            assert frame.ndim == 3
-            assert frame.shape[-1] == 3
-            
-            cv2.imwrite(
-                os.path.join(hi_dir, f'thumb-{times[i]+1:04}.png'),
-                cv2.resize(frame, (wo, ho))
-            )
-            pbar.update(1)
+    total_frames = len(vr)
+    print(f"[extract_frames] Total frames in video: {total_frames}")
+    print(f"[extract_frames] Requested frame indices: {nframes}")
+    # Remove duplicates and sort
+    frame_time_pairs = list(zip(nframes, times))
+    # Filter out-of-bounds
+    frame_time_pairs = [(f, t) for f, t in frame_time_pairs if 0 <= f < total_frames]
+    # Remove duplicates by frame index, keeping the first occurrence
+    seen = set()
+    unique_pairs = []
+    for f, t in frame_time_pairs:
+        if f not in seen:
+            seen.add(f)
+            unique_pairs.append((f, t))
+    if not unique_pairs:
+        print("No valid frame indices to extract.")
+        return
+    valid_nframes, valid_times = zip(*unique_pairs)
+    print(f"[extract_frames] Valid frame indices: {valid_nframes}")
+    # Decord get_batch cannot handle large batches, so split into chunks
+    chunk_size = 100
+    for chunk_start in range(0, len(valid_nframes), chunk_size):
+        chunk_nframes = list(valid_nframes)[chunk_start:chunk_start+chunk_size]
+        chunk_times = list(valid_times)[chunk_start:chunk_start+chunk_size]
+        print(f"[extract_frames] Processing chunk: {chunk_nframes}")
+        try:
+            frames = vr.get_batch(chunk_nframes).asnumpy()
+        except Exception as e:
+            print(f"[extract_frames] Error extracting frames for chunk {chunk_nframes}: {e}")
+            continue
+        with tqdm(total=len(chunk_nframes), desc="Extracting high-resolution frames") as pbar:
+            for i, (idx, t) in enumerate(zip(chunk_nframes, chunk_times)):
+                frame = frames[i, :, :, :]
+                # Now clear why r and b are mixed up.
+                frame = frame[:, :, np.array([2, 1, 0])]
+                assert frame.ndim == 3
+                assert frame.shape[-1] == 3
+
+                cv2.imwrite(
+                    os.path.join(hi_dir, f'thumb-{t+1:04}.png'),
+                    cv2.resize(frame, (wo, ho))
+                )
+                pbar.update(1)
 
 
 def get_delta_images(the_dir, has_face):
@@ -420,6 +460,9 @@ def extract_keyframes_from_video(target, output_json, thumb_dir):
     for el in tqdm(info['sequence'], desc="Processing OCR for slides"):
         if el['type'] == 'slide':
             im = cv2.imread(el['source'])
+            if im is None:
+                print(f"Warning: Could not read image {el['source']}, skipping OCR for this slide.")
+                continue
             d = pytesseract.image_to_data(im, output_type=Output.DICT)
             text_ocr = ' '.join([d['text'][i] for i in range(len(d['text'])) if int(d['conf'][i]) > 80 and d['text'][i].strip()])
 

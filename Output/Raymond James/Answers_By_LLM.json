@@ -1,0 +1,352 @@
+[
+  {
+    "Question_No.": 1,
+    "Question": "Raymond James' fiscal year 2024 third quarter earnings call occurred on what date?",
+    "Gemini-2.0-Flash_Answer": "(a)",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "(b)"
+  },
+  {
+    "Question_No.": 2,
+    "Question": "Who is the Senior Vice President of Investor Relations at Raymond James?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 3,
+    "Question": "Which act provides a safe harbor for forward-looking statements?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 4,
+    "Question": "Where can investors find Raymond James' filings with the SEC?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(b)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 5,
+    "Question": "Who is the Chair and CEO of Raymond James Financial?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(b)"
+  },
+  {
+    "Question_No.": 6,
+    "Question": "What is the name of the Chief Financial Officer of Raymond James Financial?",
+    "Gemini-2.0-Flash_Answer": "(a)",
+    "Gemini-1.5-Flash_Answer": "(b)",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 7,
+    "Question": "What was the reported net income available to common shareholders in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 8,
+    "Question": "What was the adjusted earnings per common share - diluted in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 9,
+    "Question": "What was the return on common equity - annualized reported in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 10,
+    "Question": "As of Q3 2024, what were the client assets under administration?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 11,
+    "Question": "What was the record number of PCG financial advisors reported in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 12,
+    "Question": "What were the domestic PCG net new assets reported in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 13,
+    "Question": "Which segment achieved record net revenues in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 14,
+    "Question": "What was the consolidated net revenues reported for Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 15,
+    "Question": "Which segment experienced a (19)% change in net revenues compared to 3Q23?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 16,
+    "Question": "What was the consolidated pre-tax income for Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 17,
+    "Question": "Raymond James' FYTD 2024 (9 months) net revenues were a:",
+    "Gemini-2.0-Flash_Answer": "(a)",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 18,
+    "Question": "Which segment experienced the largest percentage increase in pre-tax income for FYTD 2024 compared to the previous year?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 19,
+    "Question": "What was the percentage increase in Asset Management and related administrative fees?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 20,
+    "Question": "How did domestic cash sweep and ESP balances change year-over-year?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 21,
+    "Question": "What was the Net Interest Margin (NIM) for the bank segment in Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 22,
+    "Question": "During the quarter, how many shares of common stock were repurchased?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 23,
+    "Question": "What was the total value of common stock repurchased during the quarter?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 24,
+    "Question": "To what amount did total client assets under administration increase?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 25,
+    "Question": "Domestic net new assets during the quarter represented what annualized growth rate?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 26,
+    "Question": "How much client assets were recruited to domestic independent contractor and employee channels during Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 27,
+    "Question": "How much client assets are under administration for RCS (RIA and Custody services)?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 28,
+    "Question": "What record was reported for financial advisors during Q3 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 29,
+    "Question": "Which of the following is true about transfers to RCS?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 30,
+    "Question": "What was the annualized growth rate of domestic net new assets fiscal year to date?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 31,
+    "Question": "How did total client domestic sweep and enhanced savings program balances change from March 2024?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 32,
+    "Question": "By what percentage did bank loans grow over the preceding quarter?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 33,
+    "Question": "How much pre-tax income was generated by the Private Client Group during the quarter?",
+    "Gemini-2.0-Flash_Answer": "(b)",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 34,
+    "Question": "Why were the year over year results bolstered in Private Client Group?",
+    "Gemini-2.0-Flash_Answer": "(d)",
+    "Gemini-1.5-Flash_Answer": "(d)",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 35,
+    "Question": "What was the pre-tax result from Capital Markets segment?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 36,
+    "Question": "What primarily drove the sequential revenue increase in Capital Markets?",
+    "Gemini-2.0-Flash_Answer": "(a)",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 37,
+    "Question": "The pre-tax loss in Capital Markets reflects what result?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "(b)"
+  },
+  {
+    "Question_No.": 38,
+    "Question": "A deferred compensation totaled approximately what for this quarter?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 39,
+    "Question": "Which segment generated a pre-tax income of $112 million?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 40,
+    "Question": "What was the primary driver for the Asset Management segment?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 41,
+    "Question": "The Bank segment generated pre-tax income of what?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 42,
+    "Question": "How many basis points did the bank segment net interest margin decline?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 43,
+    "Question": "Raymond James generated record net revenues of what for fiscal year-to-date results?",
+    "Gemini-2.0-Flash_Answer": "(b)",
+    "Gemini-1.5-Flash_Answer": "(d)",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 44,
+    "Question": "What percentage of total compensation expense does 'Communication and information processing' account for?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 45,
+    "Question": "How are earnings per common share computed?",
+    "Gemini-2.0-Flash_Answer": "(d)",
+    "Gemini-1.5-Flash_Answer": "(d)",
+    "Gemini-1.5-Pro_Answer": "(d)"
+  },
+  {
+    "Question_No.": 46,
+    "Question": "What is tangible common equity defined as?",
+    "Gemini-2.0-Flash_Answer": "(a)",
+    "Gemini-1.5-Flash_Answer": "(a)",
+    "Gemini-1.5-Pro_Answer": "(a)"
+  },
+  {
+    "Question_No.": 47,
+    "Question": "What factor is most responsible for the Capital Markets segment pre-tax loss?",
+    "Gemini-2.0-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Flash_Answer": "Don't Know",
+    "Gemini-1.5-Pro_Answer": "Don't Know"
+  },
+  {
+    "Question_No.": 48,
+    "Question": "What contributed largely to record Asset Management net revenues?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  },
+  {
+    "Question_No.": 49,
+    "Question": "What factor is most responsible for lower NIM%",
+    "Gemini-2.0-Flash_Answer": "(d)",
+    "Gemini-1.5-Flash_Answer": "(d)",
+    "Gemini-1.5-Pro_Answer": "(d)"
+  },
+  {
+    "Question_No.": 50,
+    "Question": "What trend is not responsible for growth in Capital Markets?",
+    "Gemini-2.0-Flash_Answer": "(c)",
+    "Gemini-1.5-Flash_Answer": "(c)",
+    "Gemini-1.5-Pro_Answer": "(c)"
+  }
+]

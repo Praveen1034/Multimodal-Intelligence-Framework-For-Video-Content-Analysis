@@ -1,0 +1,452 @@
+[
+  {
+    "Question_No.": 1,
+    "Question": "What is the objective of the elevator logic riddle?",
+    "(a)": "To reach floor 0.",
+    "(b)": "To reach floor 30 in the fewest moves.",
+    "(c)": "To avoid all prime number floors.",
+    "(d)": "To press all the buttons in a specific order.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 2,
+    "Question": "What happens when Button A lands you on a floor divisible by 5?",
+    "(a)": "You go up 5 floors.",
+    "(b)": "You go back to floor 0.",
+    "(c)": "The elevator sends you back to n/2.",
+    "(d)": "You are stuck on that floor.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 3,
+    "Question": "How does Button B affect the floor number?",
+    "(a)": "Moves you up 4 floors.",
+    "(b)": "Moves you up 4 floors, but subtracts 3 from the new floor if the resulting floor is even.",
+    "(c)": "Moves you up 7 floors.",
+    "(d)": "Moves you to the next multiple of 3.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 4,
+    "Question": "What is the effect of Button C if the floor you land on is a prime number?",
+    "(a)": "You go down to floor 0.",
+    "(b)": "You are stuck on that floor.",
+    "(c)": "You immediately bounce back up 10 floors.",
+    "(d)": "You are moved to the nearest multiple of 3.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 5,
+    "Question": "What does Button D do?",
+    "(a)": "Moves you down 7 floors.",
+    "(b)": "Moves you up 2 floors.",
+    "(c)": "Moves you to the next floor that is a multiple of 3 (always up).",
+    "(d)": "Moves you up 4 floors.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 6,
+    "Question": "How does Button E's function change based on the current floor number?",
+    "(a)": "It doesn't change.",
+    "(b)": "It moves you up 2 floors and doubles the number of floors moved if the current floor number is odd.",
+    "(c)": "It moves you down 2 floors if the current floor number is odd.",
+    "(d)": "It moves you to the nearest prime number.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 7,
+    "Question": "What is unique about Trap Floor 13?",
+    "(a)": "You are forced to go back to Floor 0.",
+    "(b)": "You cannot press any button other than Button D here.",
+    "(c)": "You are sent to Floor 22.",
+    "(d)": "You are sent to Floor 10.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 8,
+    "Question": "What happens when you land on Trap Floor 22?",
+    "(a)": "You are forced to go back to Floor 0.",
+    "(b)": "You are forced to go to Floor 13.",
+    "(c)": "You are forced to go back to Floor 10.",
+    "(d)": "You are free to choose any button.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 9,
+    "Question": "If the current floor is 7 and you press button E, what happens?",
+    "(a)": "You go to floor 9.",
+    "(b)": "You go to floor 11.",
+    "(c)": "You go to floor 14.",
+    "(d)": "You go to floor 2.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 10,
+    "Question": "If the current floor is 1 and you press button B, what happens?",
+    "(a)": "You go to floor 5.",
+    "(b)": "You go to floor 7.",
+    "(c)": "You go to floor 1.",
+    "(d)": "You go to floor 4.",
+    "Answer": "(a)"
+  },
+  {
+    "Question_No.": 11,
+    "Question": "If the current floor is 3, what floor do you go to if you press Button D?",
+    "(a)": "Floor 7",
+    "(b)": "Floor 9",
+    "(c)": "Floor 6",
+    "(d)": "Floor 12",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 12,
+    "Question": "If the current floor is 16 and you press button B, what floor do you end up on?",
+    "(a)": "Floor 20",
+    "(b)": "Floor 17",
+    "(c)": "Floor 13",
+    "(d)": "Floor 11",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 13,
+    "Question": "What is meant by finding an 'optimal' solution?",
+    "(a)": "A solution that uses all buttons.",
+    "(b)": "A solution that avoids trap floors.",
+    "(c)": "A solution that uses the fewest button presses.",
+    "(d)": "A solution that reaches floor 30 quickly.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 14,
+    "Question": "From Floor 0, which button press results in moving to Floor 4?",
+    "(a)": "Button A",
+    "(b)": "Button B",
+    "(c)": "Button C",
+    "(d)": "Button E",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 15,
+    "Question": "What is the prime number between 0 and 10 in the given options?",
+    "(a)": "4",
+    "(b)": "6",
+    "(c)": "7",
+    "(d)": "9",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 16,
+    "Question": "What did the system consider when finding better solutions?",
+    "(a)": "Using only prime numbers.",
+    "(b)": "Avoiding even numbers.",
+    "(c)": "Systematic path finding strategy",
+    "(d)": "Only using Button E.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 17,
+    "Question": "What is the significance of Floor 14?",
+    "(a)": "It is a trap floor.",
+    "(b)": "It's where Button A can make a large jump without triggering penalties.",
+    "(c)": "It is a prime number.",
+    "(d)": "Button E is disabled here.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 18,
+    "Question": "What number is a multiple of 3?",
+    "(a)": "5",
+    "(b)": "7",
+    "(c)": "9",
+    "(d)": "10",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 19,
+    "Question": "Which button propels the elevator upwards to the nearest floor divisible by 3?",
+    "(a)": "Button A",
+    "(b)": "Button B",
+    "(c)": "Button C",
+    "(d)": "Button D",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 20,
+    "Question": "What is the result of pressing Button E on floor 2?",
+    "(a)": "Moving to Floor 6.",
+    "(b)": "Moving to Floor 4.",
+    "(c)": "Returning to Floor 0.",
+    "(d)": "Moving to Floor 8.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 21,
+    "Question": "Starting from floor 0, which button can be used for a first move?",
+    "(a)": "Button C (down 7 floors).",
+    "(b)": "Button D (next multiple of 3).",
+    "(c)": "All buttons.",
+    "(d)": "Button B or E",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 22,
+    "Question": "What is the effect of using Button C?",
+    "(a)": "Always moves down 7 floors.",
+    "(b)": "Always increase the floor number.",
+    "(c)": "Decrease floor number by 7 but if landing on a prime, bounce up 10",
+    "(d)": "Always moves to the next multiple of 3",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 23,
+    "Question": "If a solution lands on Floor 5 after pressing a button what might happen immediately afterward?",
+    "(a)": "Elevator goes to floor 13 automatically.",
+    "(b)": "Elevator goes to floor 2.5 automatically.",
+    "(c)": "Elevator goes to floor 0 automatically.",
+    "(d)": "Elevator moves to Floor 10 automatically",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 24,
+    "Question": "What's the purpose of tracing each button's exact behavior?",
+    "(a)": "To create a beautiful analysis.",
+    "(b)": "To complicate the puzzle.",
+    "(c)": "To avoid any type of complex numbers",
+    "(d)": "To systematically solve the logic riddle.",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 25,
+    "Question": "Why avoid trap floors?",
+    "(a)": "To reach 30 with more steps and get more enjoyment.",
+    "(b)": "To reduce movement of steps.",
+    "(c)": "To increase the number of button presses needed.",
+    "(d)": "Trap floors do not have penalties.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 26,
+    "Question": "From floor 29, what does Button D do?",
+    "(a)": "Makes the elevator move down 7 floors.",
+    "(b)": "Makes the elevator reach Floor 30.",
+    "(c)": "Makes the elevator return to Floor 10.",
+    "(d)": "Makes the elevator go back to start Floor 0.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 27,
+    "Question": "What happens to your message if the CloudRage reached its max length?",
+    "(a)": "A system message appears.",
+    "(b)": "The user loses their free messaging.",
+    "(c)": "This response paused because Claude reached its max length for a message.",
+    "(d)": "The user gets another free message",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 28,
+    "Question": "Which of the following floor cannot be reached using one movement from Floor 0?",
+    "(a)": "Floor 3 (button D)",
+    "(b)": "Floor 4 (button B)",
+    "(c)": "Floor 5 (by pressing button E and double the movement)",
+    "(d)": "All can be reached.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 29,
+    "Question": "Why is it good to explore larger jumps?",
+    "(a)": "To find better solutions.",
+    "(b)": "To waste message credits.",
+    "(c)": "Just for Fun",
+    "(d)": "To visit trap floors",
+    "Answer": "(a)"
+  },
+  {
+    "Question_No.": 30,
+    "Question": "From Floor 0, which button press results in moving to Floor 2?",
+    "(a)": "Button D",
+    "(b)": "Button B",
+    "(c)": "Button A",
+    "(d)": "Button E",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 31,
+    "Question": "If the current floor is 10, what happens if you press Button A?",
+    "(a)": "You go to floor 5.",
+    "(b)": "You go to floor 11.",
+    "(c)": "You go to floor 2.",
+    "(d)": "Nothing",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 32,
+    "Question": "What is true about starting with Button E?",
+    "(a)": "It will reach Floor 13.",
+    "(b)": "It will lead to a trap door.",
+    "(c)": "It starts to Floor 2",
+    "(d)": "It will lead to five moves.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 33,
+    "Question": "From Floor 15, how do you reach the next prime using these rules?",
+    "(a)": "Press button D to reach Floor 18.",
+    "(b)": "Press button C for -7.",
+    "(c)": "Impossible.",
+    "(d)": "Press button A to reach Floor 31.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 34,
+    "Question": "Why is finding a new efficient combination so important?",
+    "(a)": "To reach Floor 13.",
+    "(b)": "To reach Floor 30 with least steps",
+    "(c)": "Just for Fun.",
+    "(d)": "To keep busy",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 35,
+    "Question": "Where does Button B lead you if you're at floor 18?",
+    "(a)": "Floor 20.",
+    "(b)": "Floor 21.",
+    "(c)": "Floor 22.",
+    "(d)": "Floor 10",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 36,
+    "Question": "What does systematic analysis entail?",
+    "(a)": "Solving by finding prime numbers only",
+    "(b)": "Tracking each button's exact behavior",
+    "(c)": "Solving by only using E and D",
+    "(d)": "Using Trap Floors.",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 37,
+    "Question": "What's considered the 'sweet spot' for Button A?",
+    "(a)": "Floor 0",
+    "(b)": "Floor 14.",
+    "(c)": "Floor 29",
+    "(d)": "Floor 30",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 38,
+    "Question": "Why is minimizing penalties important?",
+    "(a)": "Reach Floor 30 with as least steps as possible",
+    "(b)": "To enjoy the puzzle.",
+    "(c)": "To utilize the free messaging.",
+    "(d)": "To visit trap floors",
+    "Answer": "(a)"
+  },
+  {
+    "Question_No.": 39,
+    "Question": "Floor 9, how can you reach to 12?",
+    "(a)": "Button E.",
+    "(b)": "Button B",
+    "(c)": "Button D.",
+    "(d)": "Button C",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 40,
+    "Question": "On which floor are you likely to be trapped?",
+    "(a)": "Floor 0.",
+    "(b)": "Floor 13.",
+    "(c)": "Floor 14.",
+    "(d)": "Floor 29",
+    "Answer": "(b)"
+  },
+  {
+    "Question_No.": 41,
+    "Question": "What action triggers quadratic growth with Button A?",
+    "(a)": "Landing on Floor 13.",
+    "(b)": "Moving between 0 and 3",
+    "(c)": "Starting at Floor 14.",
+    "(d)": "Pressing Button B",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 42,
+    "Question": "Why is avoiding landing on a prime floor an optimal move?",
+    "(a)": "Because it's too fast",
+    "(b)": "Prime number makes you win",
+    "(c)": "Prime floor make you bounce back up 10 floors which complicates things",
+    "(d)": "Prime floors are easy.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 43,
+    "Question": "How does Landing on an even floor after Button B impact your position?",
+    "(a)": "Your floor increases to a higher number.",
+    "(b)": "The results is always an even number.",
+    "(c)": "The result is subtracting by 3.",
+    "(d)": "the results bounce back to floor 10",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 44,
+    "Question": "Is solving the puzzle backward a strategy?",
+    "(a)": "Yes, it helps solve.",
+    "(b)": "No, its not a strategy.",
+    "(c)": "Only works with certain button pushes.",
+    "(d)": "Its not optimal.",
+    "Answer": "(a)"
+  },
+  {
+    "Question_No.": 45,
+    "Question": "After landing on trap floor 13, is that a dead end?",
+    "(a)": "No you go to Floor 0 and restart.",
+    "(b)": "Yes, you're unable to push anymore Buttons.",
+    "(c)": "No, the user can only use Button D.",
+    "(d)": "There's no penalty there",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 46,
+    "Question": "What did the system do while drafting?",
+    "(a)": "Locked the screen.",
+    "(b)": "Started rewriting.",
+    "(c)": "Inserted new text.",
+    "(d)": "All of the above",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 47,
+    "Question": "With Button C, what floor action must be taken if you end up landing on Prime Number Floors?",
+    "(a)": "You stay at that Floor.",
+    "(b)": "The floor automatically goes down 10",
+    "(c)": "The elevator jumps up 10 floors.",
+    "(d)": "You Restart at Floor 0.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 48,
+    "Question": "If the objective is to reach Floor 30 with the fewest button presses, what is the significance of trap floors?",
+    "(a)": "To increase total distance.",
+    "(b)": "They always send you back to the floor 0.",
+    "(c)": "They can potentially force you to take more steps.",
+    "(d)": "They are helpful to create a challenge.",
+    "Answer": "(c)"
+  },
+  {
+    "Question_No.": 49,
+    "Question": "In exploring different moves what does the system account for?",
+    "(a)": "Prime number rules",
+    "(b)": "Trap floors",
+    "(c)": "Multiples of 3",
+    "(d)": "All the above.",
+    "Answer": "(d)"
+  },
+  {
+    "Question_No.": 50,
+    "Question": "If the current floor is 12, what happens after pressing the button D?",
+    "(a)": "The elevator makes you stuck",
+    "(b)": "The elevator is locked",
+    "(c)": "The elevator stays on Floor 12",
+    "(d)": "The elevator moves to Floor 15.",
+    "Answer": "(d)"
+  }
+]

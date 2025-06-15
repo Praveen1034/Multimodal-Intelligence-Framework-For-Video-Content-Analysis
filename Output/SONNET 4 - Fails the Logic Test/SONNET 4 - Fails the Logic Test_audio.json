@@ -1,0 +1,422 @@
+{
+    "file_name": "SONNET 4 - Fails the Logic Test.mp3",
+    "duration": 528.432,
+    "language": "en",
+    "transcription": [
+        {
+            "start_time": "00:00:00",
+            "end_time": "00:00:05",
+            "text": "Hello community, yes we are again with Clots on it for we go here for the small efficient"
+        },
+        {
+            "start_time": "00:00:05",
+            "end_time": "00:00:10",
+            "text": "model for everyday use and we have test number two."
+        },
+        {
+            "start_time": "00:00:10",
+            "end_time": "00:00:12",
+            "text": "Until we have an elevator test."
+        },
+        {
+            "start_time": "00:00:13",
+            "end_time": "00:00:18",
+            "text": "So it's a logic riddle, solve it, you're trapped in a skyscraper with an elevator system"
+        },
+        {
+            "start_time": "00:00:18",
+            "end_time": "00:00:20",
+            "text": "and you have certain rules."
+        },
+        {
+            "start_time": "00:00:21",
+            "end_time": "00:00:26",
+            "text": "You have five buttons and each of these buttons you have to press in a particular sequence"
+        },
+        {
+            "start_time": "00:00:26",
+            "end_time": "00:00:28",
+            "text": "plus you have two trap floors."
+        },
+        {
+            "start_time": "00:00:28",
+            "end_time": "00:00:34",
+            "text": "So let's go with explanatory and let's know what we go with normal."
+        },
+        {
+            "start_time": "00:00:34",
+            "end_time": "00:00:40",
+            "text": "Let's go with normal style whatever this means and let's see if our new oh you"
+        },
+        {
+            "start_time": "00:00:40",
+            "end_time": "00:00:43",
+            "text": "limit will be set at 2 a.m."
+        },
+        {
+            "start_time": "00:00:44",
+            "end_time": "00:00:47",
+            "text": "Oh mind, here we go."
+        },
+        {
+            "start_time": "00:00:47",
+            "end_time": "00:00:56",
+            "text": "Analysis trap floors, yeah solution path, step one, corrected step one, step two, step"
+        },
+        {
+            "start_time": "00:00:56",
+            "end_time": "00:00:57",
+            "text": "three."
+        },
+        {
+            "start_time": "00:00:58",
+            "end_time": "00:01:04",
+            "text": "Let me recalculate but in our A more carefully, okay systematic path finding strategy, yes"
+        },
+        {
+            "start_time": "00:01:04",
+            "end_time": "00:01:08",
+            "text": "a path finding strategy is what every good AI system needs."
+        },
+        {
+            "start_time": "00:01:08",
+            "end_time": "00:01:13",
+            "text": "So we have here 10 moves, better solution found, that's great."
+        },
+        {
+            "start_time": "00:01:14",
+            "end_time": "00:01:19",
+            "text": "So move three is now corrected, find the optimal solution in five moves."
+        },
+        {
+            "start_time": "00:01:19",
+            "end_time": "00:01:20",
+            "text": "This is not possible."
+        },
+        {
+            "start_time": "00:01:21",
+            "end_time": "00:01:24",
+            "text": "To true optimal solution in four moves is also not possible."
+        },
+        {
+            "start_time": "00:01:25",
+            "end_time": "00:01:26",
+            "text": "Let me restart completely."
+        },
+        {
+            "start_time": "00:01:26",
+            "end_time": "00:01:30",
+            "text": "This is a good idea, yeah, verified optimal solution, yes."
+        },
+        {
+            "start_time": "00:01:32",
+            "end_time": "00:01:38",
+            "text": "Let's try this, no matter move is okay, it's trying, it's trying final answer six"
+        },
+        {
+            "start_time": "00:01:38",
+            "end_time": "00:01:38",
+            "text": "moves."
+        },
+        {
+            "start_time": "00:01:39",
+            "end_time": "00:01:43",
+            "text": "Yeah, this is it, six would be here, the right answer."
+        },
+        {
+            "start_time": "00:01:44",
+            "end_time": "00:01:49",
+            "text": "Systematic analysis, let me solve this more carefully, tracking each button, exact behavior."
+        },
+        {
+            "start_time": "00:01:49",
+            "end_time": "00:01:52",
+            "text": "This is beautiful, it's very faring now."
+        },
+        {
+            "start_time": "00:01:52",
+            "end_time": "00:01:59",
+            "text": "Here alternative move, here, floor, yeah, okay, let me try the complete different approach,"
+        },
+        {
+            "start_time": "00:01:59",
+            "end_time": "00:02:03",
+            "text": "working backwards from 30, this is a good idea, this is an excellent idea."
+        },
+        {
+            "start_time": "00:02:04",
+            "end_time": "00:02:12",
+            "text": "To reach 30, you go back and you have here validation, great idea, okay, trying different"
+        },
+        {
+            "start_time": "00:02:12",
+            "end_time": "00:02:18",
+            "text": "moves, move four, move five, it's getting complex, let me find the true shortest path."
+        },
+        {
+            "start_time": "00:02:18",
+            "end_time": "00:02:24",
+            "text": "Six moves, okay, verified optimal, five moves."
+        },
+        {
+            "start_time": "00:02:24",
+            "end_time": "00:02:31",
+            "text": "No, five move does not work, yeah, okay, so we rewrite this, okay, we have a rewriting,"
+        },
+        {
+            "start_time": "00:02:32",
+            "end_time": "00:02:38",
+            "text": "exercise, sorry the text is now corrected, it never happened, no, this is now the new"
+        },
+        {
+            "start_time": "00:02:38",
+            "end_time": "00:02:38",
+            "text": "truth."
+        },
+        {
+            "start_time": "00:02:39",
+            "end_time": "00:02:44",
+            "text": "I've no idea what we're doing here, but wait, but okay, hello, is there somebody?"
+        },
+        {
+            "start_time": "00:02:45",
+            "end_time": "00:02:50",
+            "text": "Oh, nobody there, ah, drafting an artifact, let me verify this by considering some"
+        },
+        {
+            "start_time": "00:02:50",
+            "end_time": "00:02:55",
+            "text": "strategic combination, it's drafting an artifact, okay, let's wait for the artifact to be"
+        },
+        {
+            "start_time": "00:02:55",
+            "end_time": "00:03:01",
+            "text": "drafted, I have no idea what's happening right now, can I scroll down, yes, I's rewriting"
+        },
+        {
+            "start_time": "00:03:01",
+            "end_time": "00:03:10",
+            "text": "everything, oh yeah, wait, look now it's inserting text, what's happening now, it's building"
+        },
+        {
+            "start_time": "00:03:10",
+            "end_time": "00:03:18",
+            "text": "up the text on the go, this is absolutely fascinating, drafting artifact, okay, no idea"
+        },
+        {
+            "start_time": "00:03:18",
+            "end_time": "00:03:29",
+            "text": "cannot scroll down up or down, nothing, screen is locked, let me explore larger jumps, this"
+        },
+        {
+            "start_time": "00:03:29",
+            "end_time": "00:03:34",
+            "text": "is a good idea, but wait, this is an excellent idea, look it's now rewriting, it's sinking,"
+        },
+        {
+            "start_time": "00:03:34",
+            "end_time": "00:03:40",
+            "text": "and I found the optimal solution, yeah, that's great, but what is it, would you tell us,"
+        },
+        {
+            "start_time": "00:03:40",
+            "end_time": "00:03:46",
+            "text": "no, it doesn't tell us, exploring now a six-smooth solution, yes, I think when I wanted"
+        },
+        {
+            "start_time": "00:03:46",
+            "end_time": "00:03:51",
+            "text": "two minutes over the end, we're drafting your artifact, can we scroll down, no scrolling"
+        },
+        {
+            "start_time": "00:03:51",
+            "end_time": "00:03:59",
+            "text": "is not enabled here, hey, share your unwitling to win a chance for a month, yeah, sure, I'll"
+        },
+        {
+            "start_time": "00:03:59",
+            "end_time": "00:04:08",
+            "text": "win something, this response pause because CloudRage is max length for a message, so what"
+        },
+        {
+            "start_time": "00:04:08",
+            "end_time": "00:04:18",
+            "text": "was the latest solution, optimal six-button solution, let me trace this recalculated, okay,"
+        },
+        {
+            "start_time": "00:04:19",
+            "end_time": "00:04:29",
+            "text": "but better solution found, it found the better solution that six-smooth, correct it, final"
+        },
+        {
+            "start_time": "00:04:29",
+            "end_time": "00:04:39",
+            "text": "solution is four moves, a verified optimal solution, okay, okay, let's try this systematic analysis,"
+        },
+        {
+            "start_time": "00:04:40",
+            "end_time": "00:04:45",
+            "text": "let me solve this by carefully tracking each buttons, exact behavior, this would be great,"
+        },
+        {
+            "start_time": "00:04:47",
+            "end_time": "00:04:53",
+            "text": "no, this is not optimal, profound, five moves, it's not possible, I'm so sorry, this is incorrect,"
+        },
+        {
+            "start_time": "00:04:54",
+            "end_time": "00:05:02",
+            "text": "working backwards, okay, we could come from, which 27 yards working backwards, yeah, optimal solution"
+        },
+        {
+            "start_time": "00:05:02",
+            "end_time": "00:05:10",
+            "text": "four moves is incorrect, okay, come on, my little clothes on it for, I was hoping this is getting"
+        },
+        {
+            "start_time": "00:05:10",
+            "end_time": "00:05:18",
+            "text": "complex, yes, I know, that's why I do it, let me find two true shortest path, six moves, yeah,"
+        },
+        {
+            "start_time": "00:05:18",
+            "end_time": "00:05:26",
+            "text": "optimal, five moves, breaks through three moves, solution found, this is fantastic, but incorrect,"
+        },
+        {
+            "start_time": "00:05:28",
+            "end_time": "00:05:35",
+            "text": "okay, let me recalculate systematically, yeah, let me try a different first move, okay,"
+        },
+        {
+            "start_time": "00:05:35",
+            "end_time": "00:05:41",
+            "text": "revise the approach, no single move gets us from three to 30, okay,"
+        },
+        {
+            "start_time": "00:05:42",
+            "end_time": "00:05:48",
+            "text": "most efficient solution found four moves, after the next one's the analysis we found four moves, okay,"
+        },
+        {
+            "start_time": "00:05:49",
+            "end_time": "00:05:55",
+            "text": "final verified solution five moves, okay, yeah, I'm with you, but now the final answer,"
+        },
+        {
+            "start_time": "00:05:56",
+            "end_time": "00:06:06",
+            "text": "give him is eight moves, okay, okay, I mean, yes, the simplest verified solution, six moves,"
+        },
+        {
+            "start_time": "00:06:06",
+            "end_time": "00:06:15",
+            "text": "all six moves, all the button depress, that's actually 10 moves, not six, so the system"
+        },
+        {
+            "start_time": "00:06:15",
+            "end_time": "00:06:22",
+            "text": "understand that it is writing nonsense, complete BS, and the final answer eight moves is incorrect,"
+        },
+        {
+            "start_time": "00:06:22",
+            "end_time": "00:06:28",
+            "text": "because the final answer is six moves, but it doesn't even show us here, so the results is"
+        },
+        {
+            "start_time": "00:06:28",
+            "end_time": "00:06:35",
+            "text": "for better solutions, I love this, he insight, optimized four moves solution, we have now a breakthrough"
+        },
+        {
+            "start_time": "00:06:35",
+            "end_time": "00:06:42",
+            "text": "path, this is great, optimal solution seven moves, yeah, incorrect, but sound,"
+        },
+        {
+            "start_time": "00:06:42",
+            "end_time": "00:06:46",
+            "text": "good, no this is the optimal solution, then we have a step by step verification,"
+        },
+        {
+            "start_time": "00:06:48",
+            "end_time": "00:06:54",
+            "text": "this seven moves solution is optimal, it's incorrect, but it sounds good, I mean he"
+        },
+        {
+            "start_time": "00:06:54",
+            "end_time": "00:07:00",
+            "text": "glots on it for it, sounds great, but it's factually not correct, why is this seven moves"
+        },
+        {
+            "start_time": "00:07:00",
+            "end_time": "00:07:08",
+            "text": "optimal, it avoids the traps, it minimizes the penalty, keen side for 14 is the sweet spot, yeah,"
+        },
+        {
+            "start_time": "00:07:08",
+            "end_time": "00:07:15",
+            "text": "so here we have it now, the final solution is the optimal solution seven moves, and this is incorrect,"
+        },
+        {
+            "start_time": "00:07:17",
+            "end_time": "00:07:24",
+            "text": "so riddle number two by Claude sounded for, unfortunately, I have to tell you,"
+        },
+        {
+            "start_time": "00:07:25",
+            "end_time": "00:07:37",
+            "text": "this is not the correct solution, okay, so I think we clearly showed the limitations of Claude"
+        },
+        {
+            "start_time": "00:07:37",
+            "end_time": "00:07:43",
+            "text": "sounded for, if you're interested to see more of those videos, a, why not subscribe,"
+        },
+        {
+            "start_time": "00:07:45",
+            "end_time": "00:07:51",
+            "text": "and by the way, if you want to see the same exact elevator test here on other models here in"
+        },
+        {
+            "start_time": "00:07:51",
+            "end_time": "00:07:58",
+            "text": "this video that's called test lambda 400B, here you have the elevator test for the lama,"
+        },
+        {
+            "start_time": "00:07:59",
+            "end_time": "00:08:05",
+            "text": "for model, if you would like to see the exact same test here on the O3 from OpenEye, the Mini,"
+        },
+        {
+            "start_time": "00:08:05",
+            "end_time": "00:08:12",
+            "text": "hi, this is it, however in this video I have two tests, so if you go to 21 minutes and 55 seconds,"
+        },
+        {
+            "start_time": "00:08:13",
+            "end_time": "00:08:17",
+            "text": "you see here in the middle of the video that beginning here after elevator test that it's exactly"
+        },
+        {
+            "start_time": "00:08:17",
+            "end_time": "00:08:23",
+            "text": "the same text, you see here the performance of OpenEye O3 Mini, hi, if you would like to see the"
+        },
+        {
+            "start_time": "00:08:23",
+            "end_time": "00:08:31",
+            "text": "big brother, here OpenEye O3, this is here the exact same life test, so there you have it, and in this"
+        },
+        {
+            "start_time": "00:08:31",
+            "end_time": "00:08:39",
+            "text": "video we added now, sun it for the new model by Claude by Antropikir and we performed the identical"
+        },
+        {
+            "start_time": "00:08:39",
+            "end_time": "00:08:47",
+            "text": "elevator test, you watched life-reframed performance of sun it for for logic for causal reasoning."
+        }
+    ]
+}
