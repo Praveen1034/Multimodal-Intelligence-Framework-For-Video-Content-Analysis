@@ -161,14 +161,22 @@ def extract_frames(video, hi_dir, hi_size, times):
     framerate = int(info['nb_frames']) / float(info['duration'])
     nframes = [int(framerate * (2 * (time + 1))) for time in times]
 
+    # Remove duplicates, sort, and filter out-of-bounds
     vr = VideoReader(video, ctx=cpu(0))
-    nframes = [min(vr._num_frame - 1, x) for x in nframes]
+    total_frames = vr._num_frame
+    nframes = sorted(set([min(total_frames - 1, x) for x in nframes if 0 <= x < total_frames]))
 
     chunk_size = 10  # Number of frames to process at a time
     with tqdm(total=len(nframes), desc="Extracting high-resolution frames (chunked)") as pbar:
         for i in range(0, len(nframes), chunk_size):
             chunk_indices = nframes[i:i+chunk_size]
-            frames = vr.get_batch(chunk_indices).asnumpy()
+            try:
+                frames = vr.get_batch(chunk_indices).asnumpy()
+            except Exception as e:
+                print(f"Error extracting frames at indices: {chunk_indices}")
+                print(e)
+                pbar.update(len(chunk_indices))
+                continue
             for j, idx in enumerate(chunk_indices):
                 frame = frames[j, :, :, :]
                 frame = frame[:, :, np.array([2, 1, 0])]
