@@ -159,7 +159,10 @@ def extract_frames(video, hi_dir, hi_size, times):
         wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
-    nframes = [int(framerate * (2 * (time + 1))) for time in times]
+    
+    nframes = []
+    for time in times:
+        nframes.append(int(framerate * (2 * (time + 1))))
 
     vr = VideoReader(video, ctx=cpu(0))
     total_frames = len(vr)
