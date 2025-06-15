@@ -159,52 +159,23 @@ def extract_frames(video, hi_dir, hi_size, times):
         wo = int(max_h * aspect_ratio)
 
     framerate = int(info['nb_frames']) / float(info['duration'])
-    
-    nframes = []
-    for time in times:
-        nframes.append(int(framerate * (2 * (time + 1))))
+    nframes = [int(framerate * (2 * (time + 1))) for time in times]
 
     vr = VideoReader(video, ctx=cpu(0))
-    total_frames = len(vr)
-    print(f"[extract_frames] Total frames in video: {total_frames}")
-    print(f"[extract_frames] Requested frame indices: {nframes}")
-    # Remove duplicates and sort
-    frame_time_pairs = list(zip(nframes, times))
-    # Filter out-of-bounds
-    frame_time_pairs = [(f, t) for f, t in frame_time_pairs if 0 <= f < total_frames]
-    # Remove duplicates by frame index, keeping the first occurrence
-    seen = set()
-    unique_pairs = []
-    for f, t in frame_time_pairs:
-        if f not in seen:
-            seen.add(f)
-            unique_pairs.append((f, t))
-    if not unique_pairs:
-        print("No valid frame indices to extract.")
-        return
-    valid_nframes, valid_times = zip(*unique_pairs)
-    print(f"[extract_frames] Valid frame indices: {valid_nframes}")
-    # Decord get_batch cannot handle large batches, so split into chunks
-    chunk_size = 100
-    for chunk_start in range(0, len(valid_nframes), chunk_size):
-        chunk_nframes = list(valid_nframes)[chunk_start:chunk_start+chunk_size]
-        chunk_times = list(valid_times)[chunk_start:chunk_start+chunk_size]
-        print(f"[extract_frames] Processing chunk: {chunk_nframes}")
-        try:
-            frames = vr.get_batch(chunk_nframes).asnumpy()
-        except Exception as e:
-            print(f"[extract_frames] Error extracting frames for chunk {chunk_nframes}: {e}")
-            continue
-        with tqdm(total=len(chunk_nframes), desc="Extracting high-resolution frames") as pbar:
-            for i, (idx, t) in enumerate(zip(chunk_nframes, chunk_times)):
-                frame = frames[i, :, :, :]
-                # Now clear why r and b are mixed up.
+    nframes = [min(vr._num_frame - 1, x) for x in nframes]
+
+    chunk_size = 10  # Number of frames to process at a time
+    with tqdm(total=len(nframes), desc="Extracting high-resolution frames (chunked)") as pbar:
+        for i in range(0, len(nframes), chunk_size):
+            chunk_indices = nframes[i:i+chunk_size]
+            frames = vr.get_batch(chunk_indices).asnumpy()
+            for j, idx in enumerate(chunk_indices):
+                frame = frames[j, :, :, :]
                 frame = frame[:, :, np.array([2, 1, 0])]
                 assert frame.ndim == 3
                 assert frame.shape[-1] == 3
-
                 cv2.imwrite(
-                    os.path.join(hi_dir, f'thumb-{t+1:04}.png'),
+                    os.path.join(hi_dir, f'thumb-{times[i+j]+1:04}.png'),
                     cv2.resize(frame, (wo, ho))
                 )
                 pbar.update(1)
@@ -333,32 +304,27 @@ def deduplicate_slides(slides, similarity_threshold=0.9):
         A list of unique slides.
     """
     from skimage.metrics import structural_similarity as ssim
-    
+    from tqdm import tqdm as tqdm_bar
     unique_slides = []
     seen_texts = set()
 
-    for i, slide in enumerate(slides):
+    for i, slide in tqdm_bar(list(enumerate(slides)), desc="Deduplicating slides", total=len(slides)):
         is_duplicate = False
-
         # Check for duplicate OCR text
         if slide['text_ocr'] in seen_texts:
             continue
-
         for unique_slide in unique_slides:
             # Compare visual similarity
             img1 = cv2.imread(slide['source'], cv2.IMREAD_GRAYSCALE)
             img2 = cv2.imread(unique_slide['source'], cv2.IMREAD_GRAYSCALE)
-
             if img1 is not None and img2 is not None:
                 score, _ = ssim(img1, img2, full=True)
                 if score >= similarity_threshold:
                     is_duplicate = True
                     break
-
         if not is_duplicate:
             unique_slides.append(slide)
             seen_texts.add(slide['text_ocr'])
-
     return unique_slides
 
 
