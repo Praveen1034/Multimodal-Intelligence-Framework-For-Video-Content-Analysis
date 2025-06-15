@@ -24,13 +24,14 @@ from typing import Optional
 from pydantic import BaseModel, Field, ValidationError, model_validator
 import yt_dlp
 import shutil
+import re
 
 # Set FFmpeg path
 os.environ["PATH"] += os.pathsep + "C:\\ProgramData\\chocolatey\\bin"
 
 # Constants
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-HARDCODED_DOWNLOAD_DIR = r"D:\Video_Analysis\Video_Downloader"
+HARDCODED_DOWNLOAD_DIR = r"D:\Video_Analysis\Input_Data"
 DEFAULT_OUTPUT_TEMPLATE = os.path.join(HARDCODED_DOWNLOAD_DIR, "%(title)s.%(ext)s")
 MAX_RETRIES = 3
 TIMEOUT_SECONDS = 120  # Extended timeout
@@ -74,6 +75,14 @@ def check_ffmpeg_installed():
     return True
 
 
+def sanitize_folder_name(name: str) -> str:
+    """
+    Removes or replaces invalid characters for Windows folder names.
+    """
+    # Remove characters: < > : " / \ | ? *
+    return re.sub(r'[<>:"/\\|?*]', '', name)
+
+
 def download_youtube_video(video_url: str, output_template: str = DEFAULT_OUTPUT_TEMPLATE) -> YouTubeDownloadResponse:
     """
     Downloads a YouTube video using yt_dlp, ensuring the best video and audio quality.
@@ -92,7 +101,8 @@ def download_youtube_video(video_url: str, output_template: str = DEFAULT_OUTPUT
     try:
         with yt_dlp.YoutubeDL({}) as ydl:
             info_dict = ydl.extract_info(video_url, download=False)
-            video_title = info_dict.get('title', 'downloaded_video').strip().replace("/", "_").replace("\\", "_")
+            video_title = info_dict.get('title', 'downloaded_video').strip()
+            video_title = sanitize_folder_name(video_title)
     except Exception as e:
         print(f"Failed to fetch video info: {e}")
         return YouTubeDownloadResponse(success=False, error_message=f"Failed to fetch video info: {e}")
@@ -164,7 +174,7 @@ if __name__ == "__main__":
     """
     Main script execution to download a YouTube video based on user input.
     """
-    video_url = input("Enter YouTube URL: ").strip()
+    video_url = "https://youtu.be/eGveWERbeY8?si=VInA7OkgLe3S-Qwu"
     output_template = r"D:\Video_Analysis\Input_Data"
 
     response = download_youtube_video(video_url, output_template)
