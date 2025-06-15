@@ -1,0 +1,507 @@
+{
+    "file_name": "Raymond James.mp3",
+    "duration": 600.936,
+    "language": "en",
+    "transcription": [
+        {
+            "start_time": "00:00:02",
+            "end_time": "00:00:04",
+            "text": "Good evening and welcome to Raymond James Finanches,"
+        },
+        {
+            "start_time": "00:00:05",
+            "end_time": "00:00:08",
+            "text": "fiscal 2024, third quarter earnings call."
+        },
+        {
+            "start_time": "00:00:08",
+            "end_time": "00:00:13",
+            "text": "This call is being recorded and will be available for replay on the company's investor relations website."
+        },
+        {
+            "start_time": "00:00:13",
+            "end_time": "00:00:16",
+            "text": "I'm Christi Waw, Senior Vice President of Investor Relations."
+        },
+        {
+            "start_time": "00:00:17",
+            "end_time": "00:00:18",
+            "text": "Thank you for joining us."
+        },
+        {
+            "start_time": "00:00:19",
+            "end_time": "00:00:24",
+            "text": "With me on the call today, our Paul Riley, chair and chief executive officer and Paul Chucary,"
+        },
+        {
+            "start_time": "00:00:24",
+            "end_time": "00:00:26",
+            "text": "President and Chief Financial Officer."
+        },
+        {
+            "start_time": "00:00:26",
+            "end_time": "00:00:31",
+            "text": "The presentation being reviewed today is available on Raymond James Investor Relations website."
+        },
+        {
+            "start_time": "00:00:32",
+            "end_time": "00:00:35",
+            "text": "Following the prepared remarks, the operator will open a line for questions."
+        },
+        {
+            "start_time": "00:00:37",
+            "end_time": "00:00:39",
+            "text": "Call your attention to slide two."
+        },
+        {
+            "start_time": "00:00:40",
+            "end_time": "00:00:44",
+            "text": "Please note that certain statements may during this call may constitute forward-looking statements."
+        },
+        {
+            "start_time": "00:00:45",
+            "end_time": "00:00:47",
+            "text": "These statements include, but are not limited to,"
+        },
+        {
+            "start_time": "00:00:48",
+            "end_time": "00:00:51",
+            "text": "information concerning future strategic objectives, business prospects,"
+        },
+        {
+            "start_time": "00:00:52",
+            "end_time": "00:00:55",
+            "text": "financial results, industry or market conditions,"
+        },
+        {
+            "start_time": "00:00:56",
+            "end_time": "00:01:01",
+            "text": "anticipated timing and benefits of our acquisitions and our level of success in integrating"
+        },
+        {
+            "start_time": "00:01:01",
+            "end_time": "00:01:05",
+            "text": "acquired businesses, anticipated results of litigation and regulatory developments,"
+        },
+        {
+            "start_time": "00:01:06",
+            "end_time": "00:01:08",
+            "text": "and general economic conditions."
+        },
+        {
+            "start_time": "00:01:09",
+            "end_time": "00:01:15",
+            "text": "In addition, words such as believes, expects, anticipates, intends, plans, estimates,"
+        },
+        {
+            "start_time": "00:01:15",
+            "end_time": "00:01:23",
+            "text": "projects, forecasts, and future or conditional verbs, such as may, will, could, should, and would,"
+        },
+        {
+            "start_time": "00:01:23",
+            "end_time": "00:01:26",
+            "text": "as well as any other statement that necessarily depends on future events,"
+        },
+        {
+            "start_time": "00:01:27",
+            "end_time": "00:01:29",
+            "text": "are intended to identify forward-looking statements."
+        },
+        {
+            "start_time": "00:01:30",
+            "end_time": "00:01:36",
+            "text": "Please note that there can be no assurance that actual results will not differ materially"
+        },
+        {
+            "start_time": "00:01:36",
+            "end_time": "00:01:38",
+            "text": "from those expressed in these statements."
+        },
+        {
+            "start_time": "00:01:38",
+            "end_time": "00:01:42",
+            "text": "We urge you to consider the risks described in our most recent form,"
+        },
+        {
+            "start_time": "00:01:42",
+            "end_time": "00:01:48",
+            "text": "10K and subsequent forms 10Q and forms 8K, which are available on our website."
+        },
+        {
+            "start_time": "00:01:49",
+            "end_time": "00:01:53",
+            "text": "Now, I'm happy to turn the call over to chair and CEO Paul Riley."
+        },
+        {
+            "start_time": "00:01:53",
+            "end_time": "00:01:53",
+            "text": ""
+        },
+        {
+            "start_time": "00:01:54",
+            "end_time": "00:01:55",
+            "text": "Thank you, Chrissy."
+        },
+        {
+            "start_time": "00:01:55",
+            "end_time": "00:01:55",
+            "text": "And good evening."
+        },
+        {
+            "start_time": "00:01:56",
+            "end_time": "00:01:57",
+            "text": "Thank you for joining us today."
+        },
+        {
+            "start_time": "00:01:58",
+            "end_time": "00:02:03",
+            "text": "Last week, Paul and I attended our summer development conference for our employee advisors."
+        },
+        {
+            "start_time": "00:02:03",
+            "end_time": "00:02:08",
+            "text": "It's exciting to spend time with so many advisors who embody our client-first culture."
+        },
+        {
+            "start_time": "00:02:09",
+            "end_time": "00:02:14",
+            "text": "We hear first hand what makes Raymond James a great place for advisors who value the"
+        },
+        {
+            "start_time": "00:02:14",
+            "end_time": "00:02:19",
+            "text": "breath of our technology and product platform so they can effectively serve their clients."
+        },
+        {
+            "start_time": "00:02:20",
+            "end_time": "00:02:25",
+            "text": "And importantly, a firm that provides advisors to tools they need to grow their businesses."
+        },
+        {
+            "start_time": "00:02:27",
+            "end_time": "00:02:30",
+            "text": "Paul and I appreciate the passion and dedication of the thousands of advisors"
+        },
+        {
+            "start_time": "00:02:30",
+            "end_time": "00:02:35",
+            "text": "who continue to serve their clients day in and day out."
+        },
+        {
+            "start_time": "00:02:36",
+            "end_time": "00:02:42",
+            "text": "Turning to our quarterly results, we once again deliver strong results in the quarter."
+        },
+        {
+            "start_time": "00:02:43",
+            "end_time": "00:02:48",
+            "text": "Our diverse and complementary business combined to generate record results"
+        },
+        {
+            "start_time": "00:02:48",
+            "end_time": "00:02:50",
+            "text": "for the first nine months of the fiscal year."
+        },
+        {
+            "start_time": "00:02:51",
+            "end_time": "00:02:57",
+            "text": "We continue to invest in our businesses, our people, and our technology to help drive growth"
+        },
+        {
+            "start_time": "00:02:57",
+            "end_time": "00:02:59",
+            "text": "across all of our businesses."
+        },
+        {
+            "start_time": "00:03:00",
+            "end_time": "00:03:06",
+            "text": "Beginning on slide four, the firm reported record fiscal third quarter net revenues of"
+        },
+        {
+            "start_time": "00:03:06",
+            "end_time": "00:03:14",
+            "text": "$3.23 billion, an increase of 11% over the prior year quarter, primarily due to higher asset"
+        },
+        {
+            "start_time": "00:03:14",
+            "end_time": "00:03:17",
+            "text": "management and related administrative fees."
+        },
+        {
+            "start_time": "00:03:18",
+            "end_time": "00:03:27",
+            "text": "Quarterly net income available to common shareholders was $491 million or $2.31 per diluted share."
+        },
+        {
+            "start_time": "00:03:27",
+            "end_time": "00:03:34",
+            "text": "Excluding expenses related acquisitions, adjusted net income available to common shareholders"
+        },
+        {
+            "start_time": "00:03:34",
+            "end_time": "00:03:40",
+            "text": "was $588 million or $2.39 per diluted share."
+        },
+        {
+            "start_time": "00:03:40",
+            "end_time": "00:03:48",
+            "text": "We generated strong returns with a quarter with annualized return on common equity of 17.8%"
+        },
+        {
+            "start_time": "00:03:48",
+            "end_time": "00:03:54",
+            "text": "and annualized adjusted return on tangible common equity of 21.9%."
+        },
+        {
+            "start_time": "00:03:54",
+            "end_time": "00:03:58",
+            "text": "A great result, particularly given our strong capital base."
+        },
+        {
+            "start_time": "00:04:00",
+            "end_time": "00:04:06",
+            "text": "During the quarter, we repurchase two million shares of common stock for $243 million,"
+        },
+        {
+            "start_time": "00:04:07",
+            "end_time": "00:04:13",
+            "text": "bringing our fiscal year to date total to $5.1 million for $600 million."
+        },
+        {
+            "start_time": "00:04:14",
+            "end_time": "00:04:21",
+            "text": "Moving to slide five, client assets grew to record levels during this quarter, driven by"
+        },
+        {
+            "start_time": "00:04:21",
+            "end_time": "00:04:26",
+            "text": "rising equity markets and solid advisor retention and recruiting in PCG."
+        },
+        {
+            "start_time": "00:04:28",
+            "end_time": "00:04:34",
+            "text": "Total client assets under administration increased two percent sequentially to $1.48 trillion."
+        },
+        {
+            "start_time": "00:04:35",
+            "end_time": "00:04:42",
+            "text": "Private client assets in fee-based accounts grew to $821 billion and financial assets under"
+        },
+        {
+            "start_time": "00:04:42",
+            "end_time": "00:04:51",
+            "text": "management to $229 billion. Domestic net new assets during the quarter were $16.5 billion."
+        },
+        {
+            "start_time": "00:04:51",
+            "end_time": "00:04:58",
+            "text": "Representing a five point two annualized growth rate on the beginning of the period domestic PCG assets."
+        },
+        {
+            "start_time": "00:04:59",
+            "end_time": "00:05:07",
+            "text": "Our robust technology capabilities, client first values, and long established multi-e affiliation"
+        },
+        {
+            "start_time": "00:05:07",
+            "end_time": "00:05:13",
+            "text": "options continue to retain and attract high-quality advisors to the platform."
+        },
+        {
+            "start_time": "00:05:14",
+            "end_time": "00:05:19",
+            "text": "This quarter, we recruited to our domestic independent contractor and employee channels,"
+        },
+        {
+            "start_time": "00:05:20",
+            "end_time": "00:05:25",
+            "text": "financial advisors with approximately $92 million of trailing month production,"
+        },
+        {
+            "start_time": "00:05:26",
+            "end_time": "00:05:31",
+            "text": "and $13.4 billion of client assets at their previous firms."
+        },
+        {
+            "start_time": "00:05:32",
+            "end_time": "00:05:41",
+            "text": "Including RCS, we recruited client assets of $14.9 billion, making this our best quarter since 2021,"
+        },
+        {
+            "start_time": "00:05:41",
+            "end_time": "00:05:48",
+            "text": "in terms of recruited assets. Fiscal year to date, trailing 12-month production of recruited"
+        },
+        {
+            "start_time": "00:05:48",
+            "end_time": "00:05:57",
+            "text": "advisors is up 33 percent, related client assets are up 52 percent over the prior nine-month period."
+        },
+        {
+            "start_time": "00:05:58",
+            "end_time": "00:06:05",
+            "text": "These results do not include our RIA and custody services business, RCS, which also continues to"
+        },
+        {
+            "start_time": "00:06:05",
+            "end_time": "00:06:13",
+            "text": "have recruiting success and finished the quarter with $167 billion of client assets under administration."
+        },
+        {
+            "start_time": "00:06:14",
+            "end_time": "00:06:20",
+            "text": "We continue to experience growth in RCS from external joins as well as from internal transfers."
+        },
+        {
+            "start_time": "00:06:22",
+            "end_time": "00:06:30",
+            "text": "This quarter, we reported record financial advisors of $8,782, and that does not include"
+        },
+        {
+            "start_time": "00:06:30",
+            "end_time": "00:06:37",
+            "text": "internal transfers to RCS of nearly 50 advisors, primarily all from one firm."
+        },
+        {
+            "start_time": "00:06:38",
+            "end_time": "00:06:45",
+            "text": "While transfers to RCS lower the firm's advisor count, the client assets typically remain with the firm."
+        },
+        {
+            "start_time": "00:06:46",
+            "end_time": "00:06:54",
+            "text": "Looking at fiscal year to date results, domestic net new assets were $47.7 billion,"
+        },
+        {
+            "start_time": "00:06:54",
+            "end_time": "00:07:00",
+            "text": "representing a 5.8 percent annualized growth rate on the beginning of the period domestic"
+        },
+        {
+            "start_time": "00:07:00",
+            "end_time": "00:07:05",
+            "text": "private client group assets, a strong result compared to peer group."
+        },
+        {
+            "start_time": "00:07:07",
+            "end_time": "00:07:11",
+            "text": "Total clients domestic sweep and enhanced savings program balances"
+        },
+        {
+            "start_time": "00:07:11",
+            "end_time": "00:07:18",
+            "text": "ended the quarter at $56.4 billion down 3 percent from March of 2024."
+        },
+        {
+            "start_time": "00:07:19",
+            "end_time": "00:07:25",
+            "text": "We are pleased to see cash balances renamed relatively flat in the quarter following fee"
+        },
+        {
+            "start_time": "00:07:25",
+            "end_time": "00:07:35",
+            "text": "billings paid in April. Bank loans grew 2 percent over the preceding quarter to a record 45.1 billion dollars."
+        },
+        {
+            "start_time": "00:07:35",
+            "end_time": "00:07:41",
+            "text": "Primarily due to higher securities based loans as demand for CNI loans remains muted."
+        },
+        {
+            "start_time": "00:07:42",
+            "end_time": "00:07:51",
+            "text": "Moving on to slide six, private client group generated record quarterly net revenues of $2.42 billion"
+        },
+        {
+            "start_time": "00:07:51",
+            "end_time": "00:08:01",
+            "text": "and pre-tax income of $441 million. Year over year results were bolstered by higher PCG assets"
+        },
+        {
+            "start_time": "00:08:01",
+            "end_time": "00:08:07",
+            "text": "under administration due to strong equity markets and net new assets brought into the firm."
+        },
+        {
+            "start_time": "00:08:07",
+            "end_time": "00:08:15",
+            "text": "The capital market segment generated quarterly net revenues of $330 million and a pre-tax loss of"
+        },
+        {
+            "start_time": "00:08:15",
+            "end_time": "00:08:21",
+            "text": "$14 million. Net revenues grew 20 percent compared to a year ago quarter,"
+        },
+        {
+            "start_time": "00:08:21",
+            "end_time": "00:08:28",
+            "text": "primarily due to higher debt and equity underwriting revenues. Sequentially revenues increase"
+        },
+        {
+            "start_time": "00:08:28",
+            "end_time": "00:08:33",
+            "text": "3 percent primarily driven by the higher affordable housing investment revenues."
+        },
+        {
+            "start_time": "00:08:34",
+            "end_time": "00:08:42",
+            "text": "Pre-tax loss in capital markets segment of $14 million reflects weak MNA results in the"
+        },
+        {
+            "start_time": "00:08:42",
+            "end_time": "00:08:47",
+            "text": "impact of amortization, a deferred compensation granted in preceding quarters, which totaled"
+        },
+        {
+            "start_time": "00:08:47",
+            "end_time": "00:08:54",
+            "text": "approximately $20 million this quarter. While the timing of closed-ings remain difficult to"
+        },
+        {
+            "start_time": "00:08:54",
+            "end_time": "00:09:00",
+            "text": "predict, we are still optimistic about our healthy pipeline and new business activity in MNA."
+        },
+        {
+            "start_time": "00:09:01",
+            "end_time": "00:09:06",
+            "text": "We continue to expect investment banking revenues to improve along with industry-wide"
+        },
+        {
+            "start_time": "00:09:06",
+            "end_time": "00:09:16",
+            "text": "gradual recovery. The asset management segment generated pre-tax income of $112 million on record"
+        },
+        {
+            "start_time": "00:09:16",
+            "end_time": "00:09:24",
+            "text": "net revenues of $265 million. Results were largely attributable to higher financial assets under"
+        },
+        {
+            "start_time": "00:09:24",
+            "end_time": "00:09:31",
+            "text": "management compared to the prior year quarter due to market appreciation and net inflows into"
+        },
+        {
+            "start_time": "00:09:31",
+            "end_time": "00:09:40",
+            "text": "PCG fee-based accounts. The bank segment generated net revenues of $418 million and pre-tax income"
+        },
+        {
+            "start_time": "00:09:40",
+            "end_time": "00:09:49",
+            "text": "of $111,15 million. The bank segment net interest margin of $2.64 per cent declined just two basis"
+        },
+        {
+            "start_time": "00:09:49",
+            "end_time": "00:09:55",
+            "text": "points compared to the preceding quarter. Looking at the fiscal year-to-date results on slide"
+        },
+        {
+            "start_time": "00:09:55",
+            "end_time": "00:10:00",
+            "text": "7, we generated record net revenues of $9.36 billion."
+        }
+    ]
+}
