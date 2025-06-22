@@ -4,7 +4,7 @@ from Audio_Whisper.audio_to_text import AudioTranscriber, Config
 from Video_Slide_Detector.vid2slides import extract_keyframes_from_video
 import os
 
-video_path = r"D:\Video_Analysis\Video_Downloader\Best AI Papers of Today German Edition (Deutschland)\Best AI Papers of Today German Edition (Deutschland).mp4"
+video_path = r"D:\Video_Analysis\Input_Data\Sales Analytics Using NLP  MSc Data Science & Spatial Analytics Student Project  SIG Pune\Sales Analytics Using NLP  MSc Data Science & Spatial Analytics Student Project  SIG Pune.mp4"
 mp3 = convert_mp4_to_mp3(video_path)
 if mp3 and os.path.exists(mp3):
     print(f"MP3 file created at: {mp3}")

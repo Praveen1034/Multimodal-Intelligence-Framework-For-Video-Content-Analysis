@@ -70,7 +70,28 @@ def get_slide_by_query(slides, user_query):
     else:
         end_sec = 60
 
-    return start_sec, end_sec
+    # Collect text content for the matched slide
+    matched_slide = slides[best_idx]
+    video_content = matched_slide.get("Video_Content", "")
+    audio_content = " ".join(matched_slide.get("Audio_Content", []))
+    matched_text = (video_content + " " + audio_content).strip()
+
+    # Try to add next slide's text if it exists and is not empty
+    next_text = ""
+    if best_idx + 1 < len(slides):
+        next_slide = slides[best_idx + 1]
+        next_video_content = next_slide.get("Video_Content", "")
+        next_audio_content = " ".join(next_slide.get("Audio_Content", []))
+        if next_video_content or next_audio_content:
+            next_text = (next_video_content + " " + next_audio_content).strip()
+    
+    if not matched_text:
+        matched_text = "No video content available."
+    if next_text:
+        full_text = matched_text + " " + next_text
+    else:
+        full_text = matched_text
+    return start_sec, end_sec, full_text
 # Main function
 def process_query(json_file_path, user_query):
     slides = load_slides(json_file_path)
@@ -79,8 +100,9 @@ def process_query(json_file_path, user_query):
 
 # Example usage
 if __name__ == "__main__":
-    json_path = r"D:\Video_Analysis\combine_json.json"  # 👈 Replace with the actual JSON file path
+    json_path = r"D:\Video_Analysis\Output\Raymond James\process_json.json"  # 👈 Replace with the actual JSON file path
     query = "tell me about Raymand James"
-    start,end = process_query(json_path, query)
+    start,end,text = process_query(json_path, query)
     print("Start Time:", start)
     print("End Time:", end)
+    print("Text Content:", text)

@@ -174,7 +174,7 @@ if __name__ == "__main__":
     """
     Main script execution to download a YouTube video based on user input.
     """
-    video_url = "https://youtu.be/eGveWERbeY8?si=VInA7OkgLe3S-Qwu"
+    video_url = "https://youtu.be/-p8qtbpM090?si=SZVblvgYJJcw0jMA"
     output_template = r"D:\Video_Analysis\Input_Data"
 
     response = download_youtube_video(video_url, output_template)
